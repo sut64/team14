@@ -1,11 +1,6 @@
-import { useEffect, useState, } from "react";
+import React, { useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  makeStyles,
-  Theme,
-  createStyles,
-  alpha,
-} from "@material-ui/core/styles";
+import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
 import Container from "@material-ui/core/Container";
@@ -15,8 +10,11 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Snackbar from "@material-ui/core/Snackbar";
-import Select from "@material-ui/core/Select";
 import MuiAlert, { AlertProps } from "@material-ui/lab/Alert";
+import { Select } from "@material-ui/core";
+import TextField from '@material-ui/core/TextField';
+import DateFnsUtils from '@date-io/date-fns';
+import { KeyboardDateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 
 import { OfficersInterface } from "../models/IOfficer";
 import { PatientsInterface } from "../models/IPatient";
@@ -24,12 +22,7 @@ import { SpecialistsInterface } from "../models/ISpecialist";
 import { RoomDetailsInterface } from "../models/IRoomDetail";
 import { RoomDataListsInterface } from "../models/IRoomDataList";
 
-import {
-  MuiPickersUtilsProvider,
-  KeyboardDateTimePicker,
-} from "@material-ui/pickers";
-import DateFnsUtils from "@date-io/date-fns";
-import { TextField } from "@material-ui/core";
+
 
 const Alert = (props: AlertProps) => {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -58,7 +51,7 @@ function RoomDataListCreate() {
   const [Patient, setPatients] = useState<PatientsInterface[]>([]);
   const [Specialist, setSpecialists] = useState<SpecialistsInterface[]>([]);
   const [RoomDetail, setRoomDetails] = useState<RoomDetailsInterface[]>([]);
-  const [roomdatalist, setRoomDataList] = useState<Partial<RoomDataListsInterface>>( {});
+  const [RoomDataList, setRoomDataList] = useState<Partial<RoomDataListsInterface>>( {});
  
 
   const [success, setSuccess] = useState(false);
@@ -84,9 +77,9 @@ function RoomDataListCreate() {
   const handleChange = (
     event: React.ChangeEvent<{ name?: string; value: unknown }>
   ) => {
-    const name = event.target.name as keyof typeof roomdatalist;
+    const name = event.target.name as keyof typeof RoomDataList;
     setRoomDataList({
-      ...roomdatalist,
+      ...RoomDataList,
       [name]: event.target.value,
     });
   };
@@ -94,9 +87,9 @@ function RoomDataListCreate() {
   const handleInputChange = (
     event: React.ChangeEvent<{ id?: string; value: any }>
   ) => {
-    const id = event.target.id as keyof typeof roomdatalist;
+    const id = event.target.id as keyof typeof RoomDataList;
     const { value } = event.target;
-    setRoomDataList({ ...roomdatalist, [id]: value });
+    setRoomDataList({ ...RoomDataList, [id]: value });
   };
 
   const handleDateChange = (date: Date | null) => {
@@ -106,10 +99,10 @@ function RoomDataListCreate() {
 
   const getOfficer = async () => {
     let uid = localStorage.getItem("uid");
-    fetch(`${apiUrl}/officers/ ${uid}`, requestOptions)
+    fetch(`${apiUrl}/officer/ ${uid}`, requestOptions)
       .then((response) => response.json())
       .then((res) => {
-        roomdatalist.OfficerID = res.data.ID
+        RoomDataList.OfficerID = res.data.ID
         if (res.data) {
           setOfficers(res.data);
         } else {
@@ -171,12 +164,12 @@ function RoomDataListCreate() {
 
   function submit() {
     let data = {
-      OfficerID: convertType(roomdatalist.OfficerID),
-      PatientID: convertType(roomdatalist.PatientID),
-      SpecialistID: convertType(roomdatalist.SpecialistID),
-      RoomID: convertType(roomdatalist.RoomID),
-      Day: roomdatalist.Day ?? "",
-      Note: roomdatalist.Note ?? "",
+      OfficerID: convertType(RoomDataList.OfficerID),
+      PatientID: convertType(RoomDataList.PatientID),
+      SpecialistID: convertType(RoomDataList.SpecialistID),
+      RoomID: convertType(RoomDataList.RoomID),
+      Day: RoomDataList.Day ?? "",
+      Note: RoomDataList.Note ?? "",
       EnterRoomTime: selectedDate,
     };
 
@@ -203,7 +196,6 @@ function RoomDataListCreate() {
         }
       });
   }
-
   return (
     <Container className={classes.container} maxWidth="md">
       <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
@@ -236,7 +228,7 @@ function RoomDataListCreate() {
               <p>Officer</p>
               <Select
                 native
-                value={roomdatalist.OfficerID}
+                value={RoomDataList.OfficerID}
                 onChange={handleChange}
                 disabled
                 inputProps={{
@@ -259,7 +251,7 @@ function RoomDataListCreate() {
               <p>RoomDetail</p>
               <Select
                 native
-                value={roomdatalist.RoomID}
+                value={RoomDataList.RoomID}
                 onChange={handleChange}
                 inputProps={{
                   name: "RoomID",
@@ -286,7 +278,7 @@ function RoomDataListCreate() {
               <p>Patient</p>
               <Select
                 native
-                value={roomdatalist.PatientID}
+                value={RoomDataList.PatientID}
                 onChange={handleChange}
               
                 inputProps={{
@@ -311,7 +303,7 @@ function RoomDataListCreate() {
               <p>Specialist</p>
               <Select
                 native
-                value={roomdatalist.SpecialistID}
+                value={RoomDataList.SpecialistID}
                 onChange={handleChange}
                 inputProps={{
                   name: "SpecialistID",
@@ -340,7 +332,7 @@ function RoomDataListCreate() {
                 type="integer"
                 size="medium"
                 placeholder="Please insert amount of day "
-                value={roomdatalist.Day || ""}
+                value={RoomDataList.Day || ""}
                 onChange={handleInputChange}
               />
             </FormControl>
@@ -355,7 +347,7 @@ function RoomDataListCreate() {
                 type="string"
                 size="medium"
                 placeholder="Please insert Note"
-                value={roomdatalist.Note || ""}
+                value={RoomDataList.Note || ""}
                 onChange={handleInputChange}
               />
             </FormControl>

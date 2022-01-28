@@ -14,17 +14,17 @@ type RoomDataList struct {
 
 	// PatientID ทำหน้าที่เป็น FK
 	PatientID *uint
-	Patient   Patient
+	Patient   Patient `gorm:"references:id"`
 
 	// OfficerID ทำหน้าที่เป็น FK
 	OfficerID *uint
-	Officer   Officer
+	Officer   Officer `gorm:"references:id"`
 
 	// SpecialistID ทำหน้าที่เป็น FK
 	SpecialistID *uint
-	Specialist   Specialist
+	Specialist   Specialist `gorm:"references:id"`
 
 	// RoomID ทำหน้าที่เป็น FK
 	RoomID *uint
-	Room   RoomDetail
+	Room   RoomDetail `gorm:"references:id"`
 }

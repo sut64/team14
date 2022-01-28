@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nukanda/project/entity"
+	"github.com/sut64/team14/entity"
 )
 
 // POST /ages
@@ -25,7 +25,7 @@ func CreateAge(c *gin.Context) {
 // GET /age/:id
 func GetAge(c *gin.Context) {
 	var age entity.Age
-	id := c.Param("id")
+	id := c.Param("id"):
 	if err := entity.DB().Raw("SELECT * FROM ages WHERE id = ?", id).Scan(&age).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return

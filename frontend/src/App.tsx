@@ -128,6 +128,7 @@ export default function MiniDrawer() {
     /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
+    { name: "MedicineandVaccine", icon: <StorageIcon />, path: "/medicineand_vaccines" },
   ];
 
   useEffect(() => {
@@ -225,7 +226,10 @@ export default function MiniDrawer() {
               <Route exact path="/officer/create" component={OfficerCreate} />
               <Route exact path="/room_data_lists" component={RoomDataList} />
               <Route exact path="/room_data_list/create" component={RoomDataListCreate} />
-           </Switch>
+
+              <Route exact path="/medicineand_vaccines" component={MedicineandVaccine} />
+              <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
+	   </Switch>
           </div>
         </main>
       </Router>

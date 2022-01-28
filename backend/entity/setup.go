@@ -27,6 +27,10 @@ func SetupDatabase() {
 		&Specialist{},
 		&RoomDetail{},
 		&RoomDataList{},
+		&MedicineandVaccine{},
+		&Category{},
+		&Age{},
+		&DosageForm{},
 	)
 
 	db = database
@@ -185,5 +189,52 @@ func SetupDatabase() {
 		Note:          "ห้ามสัมผัสผู้ป่วยโดยตรง",
 		EnterRoomTime: time.Now(),
 	})
+	
+		//Category data
+	Medicine := Category{
+		Category: "ยา",
+	}
+	db.Model(&Category{}).Create(&Medicine)
 
+	Vaccine := Category{
+		Category: "วัคซีน",
+	}
+	db.Model(&Category{}).Create(&Vaccine)
+
+	//DosageForm data
+	None := DosageForm{
+		DosageForm: "-",
+	}
+
+	db.Model(&DosageForm{}).Create(&None)
+	Water := DosageForm{
+		DosageForm: "ยาน้ำ",
+	}
+	db.Model(&DosageForm{}).Create(&Water)
+
+	Capsule := DosageForm{
+		DosageForm: "ยาแคปซูล",
+	}
+	db.Model(&DosageForm{}).Create(&Capsule)
+
+	Tablet := DosageForm{
+		DosageForm: "ยาเม็ด",
+	}
+	db.Model(&DosageForm{}).Create(&Tablet)
+
+	Perenteral := DosageForm{
+		DosageForm: "ยาฉีด",
+	}
+	db.Model(&DosageForm{}).Create(&Perenteral)
+
+	//Age data
+	MY := Age{
+		Age: "เดือน-ปี",
+	}
+	db.Model(&Age{}).Create(&MY)
+
+	YY := Age{
+		Age: "ปี-ปี",
+	}
+	db.Model(&Age{}).Create(&YY)
 }

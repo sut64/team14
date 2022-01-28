@@ -9,7 +9,7 @@ import (
 type Appointment struct {
 	gorm.Model
 	AppointDate time.Time
-	Issue_Date  time.Time
+	IssueDate   time.Time
 	Note        string
 	Number      int
 

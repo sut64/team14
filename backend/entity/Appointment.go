@@ -6,28 +6,6 @@ import (
 	"gorm.io/gorm"
 )
 
-type Officer struct {
-	gorm.Model
-	Name  string
-	Tel   string
-	Email string
-}
-
-type Specailist struct {
-	gorm.Model
-	Name  string
-	Tel   string
-	Email string
-}
-
-type Patient struct {
-	gorm.Model
-	Name    string
-	Tel     string
-	Email   string
-	Symptom string
-}
-
 type Appointment struct {
 	gorm.Model
 	AppointDate time.Time
@@ -36,11 +14,11 @@ type Appointment struct {
 	Number      int
 
 	OfficerID *uint
-	Officer   Officer
+	Officer   Officer `gorm:"references:id"`
 
-	SpecailistID *uint
-	Specailist   Specailist
+	SpecialistID *uint
+	Specialist   Specialist `gorm:"references:id"`
 
 	PatientID *uint
-	Patient   Patient
+	Patient   Patient `gorm:"references:id"`
 }

@@ -40,7 +40,7 @@ func CreateAppoint(c *gin.Context) {
 		Specialist:  specialist,
 		Patient:     patient,
 		AppointDate: appointment.AppointDate,
-		Issue_Date:  appointment.Issue_Date,
+		IssueDate:   appointment.IssueDate,
 		Note:        appointment.Note,
 		Number:      appointment.Number,
 	}

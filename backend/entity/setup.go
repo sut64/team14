@@ -30,12 +30,12 @@ func SetupDatabase() {
 		&MedicineandVaccine{},
 		&Category{},
 		&Age{},
-                &DosageForm{},
+		&DosageForm{},
 		&Room{},
 		&Symptom{},
 		&Screening{},
+		&Appointment{},
 	)
-
 
 	db = database
 
@@ -68,7 +68,7 @@ func SetupDatabase() {
 
 	db.Model(&Officer{}).Create(&Officer{
 		Name:     "Wittaya",
-		Officer: "Wittaya",
+		Officer:  "Wittaya",
 		Email:    "wittaya@gmail.com",
 		Password: string(password),
 	})
@@ -110,17 +110,17 @@ func SetupDatabase() {
 	db.Model(&Patient{}).Create(&e)
 
 	patient1 := Patient{
-		Name: "aaaaa",
-		Age: 28,
-		Gender: "Female",
+		Name:          "aaaaa",
+		Age:           28,
+		Gender:        "Female",
 		BloodPressure: 150,
 	}
 	db.Model(&Patient{}).Create(&patient1)
 
 	patient2 := Patient{
-		Name: "bbbbb",
-		Age: 13,
-		Gender: "Male",
+		Name:          "bbbbb",
+		Age:           13,
+		Gender:        "Male",
 		BloodPressure: 170,
 	}
 	db.Model(&Patient{}).Create(&patient2)
@@ -140,17 +140,16 @@ func SetupDatabase() {
 	// - symptom data -
 
 	symptom1 := Symptom{
-		State: "head ache",
+		State:  "head ache",
 		Period: 3,
 	}
 	db.Model(&Symptom{}).Create(&symptom1)
 
 	symptom2 := Symptom{
-		State: "cough",
+		State:  "cough",
 		Period: 5,
 	}
 	db.Model(&Symptom{}).Create(&symptom2)
-	
 
 	// - Specialist Data -
 	u := Specialist{
@@ -245,8 +244,8 @@ func SetupDatabase() {
 		Note:          "ห้ามสัมผัสผู้ป่วยโดยตรง",
 		EnterRoomTime: time.Now(),
 	})
-	
-		//Category data
+
+	//Category data
 	Medicine := Category{
 		Category: "ยา",
 	}
@@ -293,4 +292,4 @@ func SetupDatabase() {
 		Age: "ปี-ปี",
 	}
 	db.Model(&Age{}).Create(&YY)
-}	
+}

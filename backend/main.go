@@ -78,6 +78,13 @@ func main() {
 			protected.POST("/categories", controller.CreateCategory)
 			protected.PATCH("/categories", controller.UpdateCategory)
 			protected.DELETE("/categories/:id", controller.DeleteCategory)
+
+			// Appointment Routes
+			protected.GET("/appointments", controller.ListAppointment)
+			protected.GET("/appointments/:id", controller.GetAppointment)
+			protected.POST("/appointments", controller.CreateAppoint)
+			protected.PATCH("/appointments", controller.UpdateAppointment)
+			protected.DELETE("/appointments/:id", controller.DeleteAppointment)
 		}
 	}
 	// User Routes

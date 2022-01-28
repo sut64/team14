@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nukanda/project/entity"
+	"github.com/sut64/team14/entity"
 )
 
 // POST /medicineand_vaccines

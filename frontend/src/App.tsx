@@ -37,7 +37,8 @@ import MedicineandVaccine from "./components/MedicineandVaccine";
 import MedicineandVaccineCreate from "./components/MedicineandVaccineCreate";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn"; 
-
+import ScreeningCreate from "./components/ScreeningCreate";
+import Screening from "./components/Screening";
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -131,7 +132,7 @@ export default function MiniDrawer() {
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <StorageIcon />, path: "/medicineand_vaccines" },
-  ];
+{ name: "ผู้ป่วย", icon: <YouTubeIcon />, path: "/screening" },  ];
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -229,7 +230,8 @@ export default function MiniDrawer() {
               <Route exact path="/room_data_lists" component={RoomDataList} />
               <Route exact path="/room_data_list/create" component={RoomDataListCreate} />
               <Route exact path="/medicineand_vaccines" component={MedicineandVaccine} />
-              <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
+              <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} /><Route exact path="/screening" component={Screening} />
+              <Route exact path="/screening/create" component={ScreeningCreate} />
 	   </Switch>
           </div>
         </main>

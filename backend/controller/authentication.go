@@ -3,9 +3,9 @@ package controller
 import (
 	"net/http"
 
-	"github.com/MUTANT09/roomlist/entity"
-	"github.com/MUTANT09/roomlist/service"
 	"github.com/gin-gonic/gin"
+	"github.com/sut64/team14/entity"
+	"github.com/sut64/team14/service"
 	"golang.org/x/crypto/bcrypt"
 )
 

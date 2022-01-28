@@ -30,8 +30,12 @@ func SetupDatabase() {
 		&MedicineandVaccine{},
 		&Category{},
 		&Age{},
-		&DosageForm{},
+                &DosageForm{},
+		&Room{},
+		&Symptom{},
+		&Screening{},
 	)
+
 
 	db = database
 
@@ -62,14 +66,23 @@ func SetupDatabase() {
 		Password: string(password),
 	})
 
+	db.Model(&Officer{}).Create(&Officer{
+		Name:     "Wittaya",
+		Officer: "Wittaya",
+		Email:    "wittaya@gmail.com",
+		Password: string(password),
+	})
+
 	var Mutant Officer
 	var Titan Officer
 	var a Officer
 	var b Officer
+	var wittaya Officer
 	db.Raw("SELECT * FROM officers WHERE email = ?", "MUTANT@gmail.com").Scan(&Mutant)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "TITAN@example.com").Scan(&Titan)
 	db.Raw("Select * FROM officers WHERE email = ?", "aaa@example.com").Scan(&a)
 	db.Raw("Select * FROM officers WHERE email = ?", "bbb@example.com").Scan(&b)
+	db.Raw("SELECT * FROM officers WHERE email = ?", "wittaya@gmail.com").Scan(&wittaya)
 
 	// - Patient Data -
 	c := Patient{
@@ -95,6 +108,49 @@ func SetupDatabase() {
 		Tel:      "4444444444",
 	}
 	db.Model(&Patient{}).Create(&e)
+
+	patient1 := Patient{
+		Name: "aaaaa",
+		Age: 28,
+		Gender: "Female",
+		BloodPressure: 150,
+	}
+	db.Model(&Patient{}).Create(&patient1)
+
+	patient2 := Patient{
+		Name: "bbbbb",
+		Age: 13,
+		Gender: "Male",
+		BloodPressure: 170,
+	}
+	db.Model(&Patient{}).Create(&patient2)
+
+	// - room data -
+
+	room1 := Room{
+		RoomNumber: "b201",
+	}
+	db.Model(&Room{}).Create(&room1)
+
+	room2 := Room{
+		RoomNumber: "b202",
+	}
+	db.Model(&Room{}).Create(&room2)
+
+	// - symptom data -
+
+	symptom1 := Symptom{
+		State: "head ache",
+		Period: 3,
+	}
+	db.Model(&Symptom{}).Create(&symptom1)
+
+	symptom2 := Symptom{
+		State: "cough",
+		Period: 5,
+	}
+	db.Model(&Symptom{}).Create(&symptom2)
+	
 
 	// - Specialist Data -
 	u := Specialist{
@@ -237,4 +293,4 @@ func SetupDatabase() {
 		Age: "ปี-ปี",
 	}
 	db.Model(&Age{}).Create(&YY)
-}
+}	

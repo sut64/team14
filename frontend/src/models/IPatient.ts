@@ -4,4 +4,6 @@ export interface PatientsInterface {
     Behavior: string,
     Email: string,
     Tel: string,
-  }
+Age: number,
+    Gender: string,
+    BloodPressure: string,  }

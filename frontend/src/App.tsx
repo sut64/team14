@@ -37,6 +37,8 @@ import MedicineandVaccine from "./components/MedicineandVaccine";
 import MedicineandVaccineCreate from "./components/MedicineandVaccineCreate";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn"; 
+import Appointment from "./components/Appointment";
+import AppointmentCreate from "./components/AppointmentCreate";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -131,6 +133,7 @@ export default function MiniDrawer() {
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <StorageIcon />, path: "/medicineand_vaccines" },
+    { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
   ];
 
   useEffect(() => {
@@ -230,6 +233,8 @@ export default function MiniDrawer() {
               <Route exact path="/room_data_list/create" component={RoomDataListCreate} />
               <Route exact path="/medicineand_vaccines" component={MedicineandVaccine} />
               <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
+              <Route exact path="/appointment" component={Appointment} />
+              <Route exact path="/appointment/create" component={AppointmentCreate} />
 	   </Switch>
           </div>
         </main>

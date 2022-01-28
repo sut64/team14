@@ -326,7 +326,7 @@ function AppointmentCreate() {
                     <Grid item xs={12}>
                         <Button
                             component={RouterLink}
-                            to="/Appointment"
+                            to="/appointment"
                             variant="contained"
                         >
                             กลับ

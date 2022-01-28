@@ -51,6 +51,33 @@ func main() {
 			protected.PATCH("/room_data_lists", controller.UpdateRoomDataList)
 			protected.DELETE("/room_data_lists/:id", controller.DeleteRoomDataList)
 
+			// MedicineandVaccine Routes
+			protected.GET("/medicineand_vaccines", controller.ListMedicineandVaccines)
+			protected.GET("/medicineandvaccine/:id", controller.GetMedicineandVaccine)
+			protected.POST("/medicineand_vaccines", controller.CreateMedicineandVaccine)
+			protected.PATCH("/medicineand_vaccines", controller.UpdateMedicineandVaccine)
+			protected.DELETE("/medicineand_vaccines/:id", controller.DeleteMedicineandVaccine)
+
+			// DosageForm Routes
+			protected.GET("/dosage_forms", controller.ListDosageForms)
+			protected.GET("/dosageform/:id", controller.GetDosageForm)
+			protected.POST("/dosage_forms", controller.CreateDosageForm)
+			protected.PATCH("/dosage_forms", controller.UpdateDosageForm)
+			protected.DELETE("/dosage_forms/:id", controller.DeleteDosageForm)
+
+			// Age Routes
+			protected.GET("/ages", controller.ListAges)
+			protected.GET("/age/:id", controller.GetAge)
+			protected.POST("/ages", controller.CreateAge)
+			protected.PATCH("/ages", controller.UpdateAge)
+			protected.DELETE("/ages/:id", controller.DeleteAge)
+
+			// Category Routes
+			protected.GET("/categories", controller.ListCategories)
+			protected.GET("/category/:id", controller.GetCategory)
+			protected.POST("/categories", controller.CreateCategory)
+			protected.PATCH("/categories", controller.UpdateCategory)
+			protected.DELETE("/categories/:id", controller.DeleteCategory)
 		}
 	}
 	// User Routes

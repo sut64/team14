@@ -33,6 +33,8 @@ import RoomDataList from "./components/RoomDataList";
 import RoomDataListCreate from "./components/RoomDataListCreate";
 import Officers from "./components/Officer";
 import OfficerCreate from "./components/OfficerCreate";
+import MedicineandVaccine from "./components/MedicineandVaccine";
+import MedicineandVaccineCreate from "./components/MedicineandVaccineCreate";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn"; 
 
@@ -226,7 +228,6 @@ export default function MiniDrawer() {
               <Route exact path="/officer/create" component={OfficerCreate} />
               <Route exact path="/room_data_lists" component={RoomDataList} />
               <Route exact path="/room_data_list/create" component={RoomDataListCreate} />
-
               <Route exact path="/medicineand_vaccines" component={MedicineandVaccine} />
               <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
 	   </Switch>

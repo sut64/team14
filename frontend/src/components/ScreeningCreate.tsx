@@ -18,9 +18,9 @@ import Snackbar from "@material-ui/core/Snackbar";
 import Select from "@material-ui/core/Select";
 import MuiAlert, { AlertProps } from "@material-ui/lab/Alert";
 
-import { OfficerInterface } from "../models/IOfficer";
+import { OfficersInterface } from "../models/IOfficer";
 
-import { PatientInterface } from "../models/IPatient";
+import { PatientsInterface } from "../models/IPatient";
 import { RoomInterface } from "../models/IRoom";
 import { SymptomInterface } from "../models/ISymptom";
 import { ScreeningInterface } from "../models/IScreening";
@@ -54,9 +54,9 @@ const useStyles = makeStyles((theme: Theme) =>
 function ScreeningCreate() {
   const classes = useStyles();
   const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
-  const [officers, setOfficer] = useState<OfficerInterface[]>([]);
+  const [officers, setOfficer] = useState<OfficersInterface[]>([]);
 
-const [patient, setPatient] = useState<PatientInterface[]>([]);
+const [patient, setPatient] = useState<PatientsInterface[]>([]);
 const [room, setRoom] = useState<RoomInterface[]>([]);
 const [symptom, setSymptom] = useState<SymptomInterface[]>([]);
 const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
@@ -92,13 +92,13 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
     });
   };
 
-  /*const handleInputChange = (
+  const handleInputChange = (
     event: React.ChangeEvent<{ id?: string; value: any }>
   ) => {
     const id = event.target.id as keyof typeof screening;
     const { value } = event.target;
     setScreening({ ...screening, [id]: value });
-  };*/
+  };
  
   const handleDateChange = (date: Date | null) => {
     console.log(date);
@@ -121,7 +121,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
 
 
   const getRoom = async () => {
-    fetch(`${apiUrl}/rooms`, requestOptions)
+    fetch(`${apiUrl}/room_details`, requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res.data) {
@@ -278,7 +278,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
                 <option aria-label="None" value="">
                   เลือกผู้ป่วย
                 </option>
-                {patient.map((item: PatientInterface) => (
+                {patient.map((item: PatientsInterface) => (
                   <option value={item.ID} key={item.ID}>
                     {item.Name}
                   </option>

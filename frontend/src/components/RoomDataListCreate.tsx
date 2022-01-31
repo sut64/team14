@@ -168,8 +168,8 @@ function RoomDataListCreate() {
       PatientID: convertType(RoomDataList.PatientID),
       SpecialistID: convertType(RoomDataList.SpecialistID),
       RoomID: convertType(RoomDataList.RoomID),
-      Day: RoomDataList.Day ?? "",
-      Note: RoomDataList.Note ?? "",
+      Day: typeof RoomDataList.Day === "string" ? parseInt(RoomDataList.Day) : 0,
+      Note: RoomDataList.Note ,
       EnterRoomTime: selectedDate,
     };
 

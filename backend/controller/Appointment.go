@@ -56,8 +56,8 @@ func CreateAppoint(c *gin.Context) {
 func GetAppointment(c *gin.Context) {
 	var appointment entity.Appointment
 	id := c.Param("id")
-	if err := entity.DB().Preload("Specailist").Preload("Officer").Preload("Pateint").Raw(
-		"SELECT * FROM Appointment WHERE id = ?", id).Find(&appointment).Error; err != nil {
+	if err := entity.DB().Preload("Specialist").Preload("Officer").Preload("Patient").Raw(
+		"SELECT * FROM appointments WHERE id = ?", id).Find(&appointment).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
@@ -67,8 +67,8 @@ func GetAppointment(c *gin.Context) {
 // GET /get list
 func ListAppointment(c *gin.Context) {
 	var appointment []entity.Appointment
-	if err := entity.DB().Preload("Specailist").Preload("Officer").Preload("Pateint").Raw(
-		"SELECT * FROM Appointment").Find(&appointment).Error; err != nil {
+	if err := entity.DB().Preload("Specialist").Preload("Officer").Preload("Patient").Raw(
+		"SELECT * FROM appointments").Find(&appointment).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
@@ -79,7 +79,7 @@ func ListAppointment(c *gin.Context) {
 // DELETE /:id
 func DeleteAppointment(c *gin.Context) {
 	id := c.Param("id")
-	if tx := entity.DB().Exec("DELETE FROM Appointment WHERE id = ?", id); tx.RowsAffected == 0 {
+	if tx := entity.DB().Exec("DELETE FROM appointments WHERE id = ?", id); tx.RowsAffected == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Appointment not found"})
 		return
 	}

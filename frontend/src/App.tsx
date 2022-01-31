@@ -132,7 +132,7 @@ export default function MiniDrawer() {
     /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
-    { name: "MedicineandVaccine", icon: <StorageIcon />, path: "/medicineand_vaccines" },
+    { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
     { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
   ];
 

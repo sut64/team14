@@ -15,7 +15,7 @@ func DB() *gorm.DB {
 }
 
 func SetupDatabase() {
-	database, err := gorm.Open(sqlite.Open("roomlist.db"), &gorm.Config{})
+	database, err := gorm.Open(sqlite.Open("team14.db"), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
@@ -68,7 +68,6 @@ func SetupDatabase() {
 
 	db.Model(&Officer{}).Create(&Officer{
 		Name:     "Wittaya",
-		Officer:  "Wittaya",
 		Email:    "wittaya@gmail.com",
 		Password: string(password),
 	})
@@ -86,26 +85,26 @@ func SetupDatabase() {
 
 	// - Patient Data -
 	c := Patient{
-		Name:     "นายซี",
-		Behavior: "ไข้สูง ติดเชื้อ",
-		Email:    "ccc@example.com",
-		Tel:      "2222222222",
+		Name:          "นายซี",
+		Age:           17,
+		Gender:        "Male",
+		BloodPressure: 170,
 	}
 	db.Model(&Patient{}).Create(&c)
 
 	d := Patient{
-		Name:     "นายดี",
-		Behavior: "หวัดรุนเเรง ติดเชื้อทางเดินหายใจ",
-		Email:    "ddd@example.com",
-		Tel:      "3333333333",
+		Name:          "นายดี",
+		Age:           18,
+		Gender:        "Male",
+		BloodPressure: 170,
 	}
 	db.Model(&Patient{}).Create(&d)
 
 	e := Patient{
-		Name:     "นายอี",
-		Behavior: "ติดเชื้อทางผิวหนัง มีเชื้อที่แผลตามตัว",
-		Email:    "fff@example.com",
-		Tel:      "4444444444",
+		Name:          "นายอี",
+		Age:           19,
+		Gender:        "Male",
+		BloodPressure: 170,
 	}
 	db.Model(&Patient{}).Create(&e)
 

@@ -3,9 +3,10 @@ package controller
 import (
 	"net/http"
 
-	"github.com/chanwit/sa-64-example/entity"
 	"github.com/gin-gonic/gin"
+	"github.com/sut64/team14/entity"
 )
+
 // POST /users
 func CreatePatient(c *gin.Context) {
 	var patient entity.Patient

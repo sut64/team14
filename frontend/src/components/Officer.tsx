@@ -92,18 +92,16 @@ function Officers() {
                 <TableCell align="center" width="45%">
                   Name
                 </TableCell>
-                <TableCell align="center" width="45%">
-                  Email
-                </TableCell>
+                
                 
               </TableRow>
             </TableHead>
             <TableBody>
-              {officers.map((officer: OfficersInterface) => (
-                <TableRow key={officer.ID}>
-                  <TableCell align="center">{officer.ID}</TableCell>
-                  <TableCell align="center">{officer.Name}</TableCell>
-                  <TableCell align="center">{officer.Email}</TableCell>
+              {officers.map((item: OfficersInterface) => (
+                <TableRow key={item.ID}>
+                  <TableCell align="center">{item.ID}</TableCell>
+                  <TableCell align="center">{item.Name}</TableCell>
+                  
 
                 </TableRow>
               ))}

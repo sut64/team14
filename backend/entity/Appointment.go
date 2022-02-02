@@ -8,9 +8,9 @@ import (
 
 type Appointment struct {
 	gorm.Model
-	AppointDate time.Time
-	IssueDate   time.Time
-	Note        string `valid:"required~Note can not be blank"`
+	AppointDate time.Time `valid:"-"`
+	IssueDate   time.Time `valid:"-"`
+	Note        string    `valid:"required~Note can not be blank"`
 	Number      int
 
 	OfficerID *uint

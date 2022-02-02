@@ -43,7 +43,7 @@ function AppointmentCreate() {
       );
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
-
+    const [errorMessage, setErrorMessage] = useState("");
     const apiUrl = "http://localhost:8080";
     const requestOptions = {
       method: "GET",
@@ -145,7 +145,7 @@ function AppointmentCreate() {
                 Note: appointment.Note,
                 IssueDate: issueDate,
                 AppointDate: appointDate,
-                Number: typeof appointment.Number === "string" ? parseInt(appointment.Number) : 0,
+                Number: convertType(appointment.Number) ,
         };
         console.log(data)
 
@@ -164,9 +164,12 @@ function AppointmentCreate() {
         if (res.data) {
           console.log("บันทึกได้")
           setSuccess(true);
+          setErrorMessage("");
         } else {
-          console.log("บันทึกไม่ได้")
+          console.log("บันทึกไม่ได้",res)
           setError(true);
+          setErrorMessage(res.error);
+          
         }
       });
   }
@@ -175,12 +178,12 @@ function AppointmentCreate() {
         <Container className={classes.container} maxWidth="md">
             <Snackbar open={success} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success">
-                    บันทึกข้อมูลสำเร็จ
+                    บันทึกข้อมูลสำเร็จ 
                 </Alert>
             </Snackbar>
             <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="error">
-                    บันทึกข้อมูลไม่สำเร็จ
+                    บันทึกข้อมูลไม่สำเร็จ {errorMessage}
                 </Alert>
             </Snackbar>
             <Paper className={classes.paper}>
@@ -266,14 +269,14 @@ function AppointmentCreate() {
                     </Grid>
                     <Grid item xs={8}>
                         <FormControl fullWidth variant="outlined">
-                            <p>จำนวนวันในการรักษา</p>
+                            <p>หมายเหตุ</p>
                             <TextField
-                                name="์Number"
+                                name="Number"
                                 type="string"
                                 multiline
                                 rows={1}
                                 value={appointment.Number}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                         </FormControl>
                     </Grid>
@@ -286,7 +289,7 @@ function AppointmentCreate() {
                                 multiline
                                 rows={1}
                                 value={appointment.Note}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                         </FormControl>
                     </Grid>

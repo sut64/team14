@@ -46,6 +46,12 @@ func CreateAppoint(c *gin.Context) {
 		Number:      appointment.Number,
 	}
 
+	//validation field Number ต้องมีค่าเป็นบวกเท่านั้น
+	if value := govalidator.IsPositive(float64(float64(appointment.Number))); !value {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Amount of day must more then 0"})
+		return
+	}
+
 	if _, err := govalidator.ValidateStruct(appointment); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return

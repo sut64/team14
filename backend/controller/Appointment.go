@@ -3,6 +3,7 @@ package controller
 import (
 	"net/http"
 
+	"github.com/asaskevich/govalidator"
 	"github.com/gin-gonic/gin"
 	"github.com/sut64/team14/entity"
 )
@@ -43,6 +44,11 @@ func CreateAppoint(c *gin.Context) {
 		IssueDate:   appointment.IssueDate,
 		Note:        appointment.Note,
 		Number:      appointment.Number,
+	}
+
+	if _, err := govalidator.ValidateStruct(appointment); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
 	}
 
 	if err := entity.DB().Create(&AP).Error; err != nil {

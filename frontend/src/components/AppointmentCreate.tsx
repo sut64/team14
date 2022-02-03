@@ -269,7 +269,7 @@ function AppointmentCreate() {
                     </Grid>
                     <Grid item xs={8}>
                         <FormControl fullWidth variant="outlined">
-                            <p>หมายเหตุ</p>
+                            <p>จำนวนวันที่รักษา</p>
                             <TextField
                                 name="Number"
                                 type="string"

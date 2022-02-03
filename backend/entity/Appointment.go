@@ -10,7 +10,7 @@ import (
 type Appointment struct {
 	gorm.Model
 	AppointDate time.Time `valid:"IsFuture~Appointment Date must be in future"`
-	IssueDate   time.Time `valid:"-"`
+	IssueDate   time.Time `valid:"IsPresent~Issue Date must be in Present"`
 	Note        string    `valid:"required~Note can not be blank"`
 	Number      int
 
@@ -28,5 +28,10 @@ func init() {
 	govalidator.CustomTypeTagMap.Set("IsFuture", func(i interface{}, context interface{}) bool {
 		t := i.(time.Time)
 		return t.After(time.Now())
+	})
+
+	govalidator.CustomTypeTagMap.Set("IsPresent", func(i interface{}, context interface{}) bool {
+		t := i.(time.Time)
+		return t.Equal(time.Now())
 	})
 }

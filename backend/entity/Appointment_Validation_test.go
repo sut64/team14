@@ -14,8 +14,8 @@ func TestAllpass(t *testing.T) {
 	appointment := Appointment{
 		Note:        "123",
 		Number:      123,
-		AppointDate: time.Date(2022, 01, 28, 8, 00, 00, 00, time.Local),
-		IssueDate:   time.Date(2022, 01, 27, 9, 00, 00, 00, time.Local),
+		AppointDate: time.Now().Add(24 * time.Hour),
+		IssueDate:   time.Now(),
 	}
 
 	ok, err := govalidator.ValidateStruct(appointment)
@@ -31,8 +31,8 @@ func TestNoteMustNotBlank(t *testing.T) {
 	appointment := Appointment{
 		Note:        "",
 		Number:      123,
-		AppointDate: time.Date(2022, 01, 28, 8, 00, 00, 00, time.Local),
-		IssueDate:   time.Date(2022, 01, 27, 9, 00, 00, 00, time.Local),
+		AppointDate: time.Now().Add(24 * time.Hour),
+		IssueDate:   time.Now(),
 	}
 
 	ok, err := govalidator.ValidateStruct(appointment)
@@ -48,7 +48,7 @@ func TestAmountDayMustMoreThanO(t *testing.T) {
 	appointment := Appointment{
 		Note:        "123456",
 		Number:      0,
-		AppointDate: time.Date(2022, 01, 28, 8, 00, 00, 00, time.Local),
+		AppointDate: time.Now().Add(24 * time.Hour),
 		IssueDate:   time.Date(2022, 01, 27, 9, 00, 00, 00, time.Local),
 	}
 
@@ -68,7 +68,7 @@ func TestAppoiontDatemustFuture(t *testing.T) {
 		Note:        "123",
 		Number:      123,
 		AppointDate: time.Now(),
-		IssueDate:   time.Date(2022, 01, 27, 9, 00, 00, 00, time.Local),
+		IssueDate:   time.Now(),
 	}
 
 	ok, err := govalidator.ValidateStruct(appointment)
@@ -76,4 +76,21 @@ func TestAppoiontDatemustFuture(t *testing.T) {
 	g.Expect(ok).ToNot(gomega.BeTrue())
 	g.Expect(err).ToNot(gomega.BeNil())
 	g.Expect(err.Error()).To(gomega.Equal("Appointment Date must be in future"))
+}
+
+func TestIssueDatemustPresent(t *testing.T) {
+	g := gomega.NewGomegaWithT(t)
+
+	appointment := Appointment{
+		Note:        "123",
+		Number:      123,
+		AppointDate: time.Now().Add(24 * time.Hour),
+		IssueDate:   time.Now().Add(24 * time.Hour),
+	}
+
+	ok, err := govalidator.ValidateStruct(appointment)
+
+	g.Expect(ok).ToNot(gomega.BeTrue())
+	g.Expect(err).ToNot(gomega.BeNil())
+	g.Expect(err.Error()).To(gomega.Equal("Issue Date must be in Present"))
 }

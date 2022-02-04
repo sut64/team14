@@ -28,6 +28,7 @@ import HomeIcon from "@material-ui/icons/Home";
 //import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 import FaceIcon from '@material-ui/icons/Face';
 import UnarchiveIcon from '@material-ui/icons/Unarchive';
+import CoronavirusIcon from '@mui/icons-material/Coronavirus';
 
 import RoomDataList from "./components/RoomDataList";
 import RoomDataListCreate from "./components/RoomDataListCreate";
@@ -39,6 +40,8 @@ import Home from "./components/Home";
 import SignIn from "./components/SignIn"; 
 import Appointment from "./components/Appointment";
 import AppointmentCreate from "./components/AppointmentCreate";
+import Contagious from "./components/Contagious";
+import ContagiousCreate from "./components/ContagiousCreate";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -134,6 +137,7 @@ export default function MiniDrawer() {
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
     { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
+    { name: "Contagious", icon: <CoronavirusIcon />, path: "/contagious" },
   ];
 
   useEffect(() => {
@@ -235,6 +239,8 @@ export default function MiniDrawer() {
               <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
               <Route exact path="/appointment" component={Appointment} />
               <Route exact path="/appointment/create" component={AppointmentCreate} />
+	      <Route exact path="/contagious" component={Contagious} />
+              <Route exact path="/contagious/create" component={ContagiousCreate} />
 	   </Switch>
           </div>
         </main>

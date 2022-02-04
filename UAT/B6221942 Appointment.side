@@ -1,0 +1,981 @@
+{
+  "id": "72a7d491-1cd8-4f9d-9a4e-6db992ece608",
+  "version": "2.0",
+  "name": "B6221942 Appointment",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "3886b078-2fc5-4af3-9415-b8c39309a208",
+    "name": "B6221942 บันทึกข้อมูล Appointment สำเร็จ",
+    "commands": [{
+      "id": "3cc81dfa-e4a5-4b9f-b0dd-aeb5e2f87716",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "414703ee-9eef-4e11-89fd-df5ec760f42c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x849",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "010a5355-921d-4156-aecb-cf25bb8c73e4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-a-12:nth-child(5) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e934d12a-3767-493f-ad87-eabea74515ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(5) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2161f36-489b-4a31-a2af-32defe01fedd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-a-12:nth-child(5) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ddf607-a0dd-4405-926e-a0f6f3cc00c2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b27182d0-da10-48c1-9f4b-f2401a0421bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc4a4457-9d93-461b-bb3c-1876337530f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a31f2cd9-7616-4130-9e79-420b7c89da82",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=aaaaa"
+    }, {
+      "id": "0744faf9-d0e5-4f10-9d4f-936c57b060be",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd5dea21-b80c-46d5-b3a3-8186b6313e47",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอยู"
+    }, {
+      "id": "69c961d2-015f-4c4f-9f35-a3c41949813a",
+      "comment": "",
+      "command": "click",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6c49a4-6c5a-4e4f-bc6f-6c50daab49d1",
+      "comment": "",
+      "command": "type",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "34"
+    }, {
+      "id": "5a418831-7c7e-43c0-8d7a-6edd7313a274",
+      "comment": "",
+      "command": "click",
+      "target": "name=Note",
+      "targets": [
+        ["name=Note", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4030dae-2508-46d0-8d5a-fb92c4e185d2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "804b9fca-5e5d-429c-9885-2651906385e4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Note",
+      "targets": [
+        ["name=Note", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "นัดตรวจ"
+    }, {
+      "id": "741be735-ea99-4220-aa99-7458c0643ae7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "173840ac-d47c-4a9d-b4dd-3018c783811f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73843ac-b858-4b34-b5ed-500ed9cdcd04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(3) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(3) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[3]/div[3]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'15')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0429443e-a033-428b-ada0-2ff806ac6169",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1384ad5-8477-4f75-890d-a4f403f45866",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6c195d-d2c6-4f18-92fd-dc8c8fc4d1a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "469437c5-73e2-4301-a4de-7c8263f19ff0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลสำเร็จ"
+    }]
+  }, {
+    "id": "113abeda-7120-401e-bb04-132f00d43539",
+    "name": "B6221942 ตรวจสอบหมายเหตุ Note ไม่เป็นค่าว่าง",
+    "commands": [{
+      "id": "3c8fad7f-4f6f-4ee9-a6c2-c3b7bf10977d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "152ef7fc-6f06-4697-a892-1459ca16a2b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x826",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1576a4b3-7ed0-4651-bcda-ff7827f3ce1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(5) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "96eb414b-8cf2-48ce-a286-fb0a1315c53e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa403238-57a6-46cd-af72-3d5271c99ce3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ecd6d2c-50c1-4653-a77d-e62d622c46b3",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c00c59d1-037b-48dd-a768-395d44ae29c1",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=นายดี"
+    }, {
+      "id": "4c78433f-f247-4a67-8bc4-28f206fa28aa",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd3f573-26ce-4066-adde-7d2bb409253a",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอจี"
+    }, {
+      "id": "73ccc2f7-df38-42e6-80c1-54c07a244268",
+      "comment": "",
+      "command": "click",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb476bd-9c7f-4a6e-8501-3747e2ff2d10",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb3166b-b20f-44f1-8299-d5c9455c03dc",
+      "comment": "",
+      "command": "type",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "17"
+    }, {
+      "id": "bbf24e6f-2dfd-4f85-bd4b-f5501e426b08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8711293c-3c07-4d51-a6eb-dde9883fc290",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "99ef272c-7462-4651-b319-f03f438add5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[3]/div[4]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7f8337f-ecbb-4c99-81ea-b24e54a7aaec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c48c80e-9ffd-4442-966e-21777be27463",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2aafd55-b29a-4f1f-995c-8283f9a9a57b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "473a2ab1-2536-4888-a2d8-b2b55fdadee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary",
+      "targets": [
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "909d6756-3a18-4c03-a6bf-8b2dfa5b3f3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d60be01e-f229-4300-8dde-62495dd291b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ Note can not be blank"
+    }]
+  }, {
+    "id": "b901ce51-ceea-4112-971f-a6eaa1897afa",
+    "name": "B6221942 ตรวจสอบจำนวนวันที่รักษา Number เป็นจำนวนเต็มบวก",
+    "commands": [{
+      "id": "492e959b-4936-44ec-9c10-239258c529d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9038cc52-6148-43e4-a99b-8e350240c941",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x826",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97bfbce5-fbe6-4505-a173-2a2777d6e35f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(5) > .MuiButtonBase-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) > .MuiButtonBase-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[5]/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d0da2b-bbb8-48b2-b810-9a46eb9a434e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e25363-7c28-4eae-898c-39da51e22038",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dea92f5-aad2-4cc7-b7f7-030de55f0df1",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=นายซี"
+    }, {
+      "id": "cdacf894-253f-46ca-8230-4d2f09b81ff4",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3603d79e-dc7c-4452-b44a-dd07aabfd5e4",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอฮง"
+    }, {
+      "id": "cfcb1471-58f0-4925-b61f-ba0ab0c92f66",
+      "comment": "",
+      "command": "click",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea1512ba-f99b-4349-afbd-2366996bb158",
+      "comment": "",
+      "command": "type",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "-1"
+    }, {
+      "id": "ed747013-a77d-44f0-93ac-4fbb44fd4db2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(5) .MuiInputBase-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(5) .MuiInputBase-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8372bc7-acca-494d-b931-a69c65042bff",
+      "comment": "",
+      "command": "type",
+      "target": "name=Note",
+      "targets": [
+        ["name=Note", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "ฟหก"
+    }, {
+      "id": "682d4a7b-2b24-47da-bff5-011046232ff4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb024a0-8754-4e3f-b314-2a2960d482ba",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiGrid-root:nth-child(6) path:nth-child(1)",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c3f4b47-df7b-4738-a60a-593d57082423",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiGrid-root:nth-child(6) path:nth-child(1)",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c08673d-7242-4e9e-82cb-a32c6d7f87de",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiIconButton-label",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiIconButton-label", "css:finder"],
+        ["xpath=//div[4]/div[5]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c218f2b8-b30d-4e24-ae1c-be74edbd8ffc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiIconButton-label",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiIconButton-label", "css:finder"],
+        ["xpath=//div[4]/div[5]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'24')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c662d9f0-bc68-4a65-9f89-9174314afac8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da1f15d-0a3d-47c8-8d19-4571e58d29c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bd5181f-e5d0-4acb-8c36-645fd6766d4c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary",
+      "targets": [
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f12e55d2-003d-4f7e-b61d-9e102d1b141b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary",
+      "targets": [
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb8b3956-1604-4c07-ab1b-d3d1e01d3e51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eca2a68a-9b3a-4cbd-b206-872dd99532c6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ Amount of day must more then 0"
+    }]
+  }, {
+    "id": "ae7617ff-2749-48d1-a449-7afae9cd72df",
+    "name": "B6221942 ตรวจสอบวันที่นัดตรวจโรค AppointDate ไม่เป็นวันในอดีต",
+    "commands": [{
+      "id": "97066d38-0054-4180-bb2f-a4e097bc8297",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51509e76-430d-4c35-ac50-29e42313fbf5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x826",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "606b823f-0d49-48c4-9b5f-dac2fb0a4600",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(5) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(5) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[5]/div/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ca0354d-3d79-42a5-bbdc-c2ad428f6f30",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained",
+      "targets": [
+        ["css=.MuiButton-contained", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/appointment/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b4276e-d0d2-48f7-987a-b5fcab8f9952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained",
+      "targets": [
+        ["css=.MuiButton-contained", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/appointment/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5aaee94-e4e3-470c-b18b-e64a0d011367",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c3464f-5784-4d4f-b7f7-b71299ce6c1a",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=bbbbb"
+    }, {
+      "id": "5a07ef6b-fad9-49fb-a207-132ad27725b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2825668c-ef37-47d7-beda-94db8b1c07e5",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอฮง"
+    }, {
+      "id": "ab2815c7-ac96-4f49-b198-ce372925925d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(4) .MuiInputBase-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(4) .MuiInputBase-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddada63d-90dc-4314-af5b-711c2d0f8ffa",
+      "comment": "",
+      "command": "type",
+      "target": "name=Number",
+      "targets": [
+        ["name=Number", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Number']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[4]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "23"
+    }, {
+      "id": "087f7b04-4abd-4df3-8d13-a8ce1343663e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Note",
+      "targets": [
+        ["name=Note", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af753b2-bff6-417a-b70f-376bf97778b6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ecc2ef7-4ff7-4f01-a899-37a2ce6e7422",
+      "comment": "",
+      "command": "type",
+      "target": "name=Note",
+      "targets": [
+        ["name=Note", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//textarea[@name='Note']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[5]/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/textarea", "xpath:position"]
+      ],
+      "value": "asdasd"
+    }, {
+      "id": "b6720bc6-aacf-43c7-84d0-bdb43a20e8ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1481f219-b58e-4338-bb8b-da987ed3a479",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(6) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ddde9f2-708f-4978-afcc-c107ffb993e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(1) > div:nth-child(3) .MuiIconButton-label",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(1) > div:nth-child(3) .MuiIconButton-label", "css:finder"],
+        ["xpath=//div[2]/div/div/div[3]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3a94a7-1f93-4724-b548-12467a9bd25d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7263911-309f-4007-940a-8902f1aa0334",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "559644b9-247e-4ccb-b992-93a40519f6e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa932c7-65de-4310-b6c3-b32ddd524072",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbaca083-ada7-4f10-a7bd-c1d5cdc03651",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa0cf2e-c3ad-4b3b-b4a4-540a08175bf0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ Appointment Date must be in future"
+    }]
+  }],
+  "suites": [{
+    "id": "e1d9140d-bda2-4349-b831-3b5e26088f68",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

@@ -3,6 +3,7 @@ package controller
 import (
 	"net/http"
 
+	"github.com/asaskevich/govalidator"
 	"github.com/sut64/team14/entity"
 
 	"github.com/gin-gonic/gin"
@@ -55,6 +56,17 @@ func CreateRoomDataList(c *gin.Context) {
 		Day:           roomdatalist.Day,
 		Note:          roomdatalist.Note,
 		EnterRoomTime: roomdatalist.EnterRoomTime, // ตั้งค่าฟิลด์ EnterRoomDateTime
+	}
+
+	//validation field Number ต้องมีค่าเป็นบวกเท่านั้น
+	if value := govalidator.IsPositive(float64(float64(roomdatalist.Day))); !value {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Amount of day must more then 0"})
+		return
+	}
+
+	if _, err := govalidator.ValidateStruct(roomdatalist); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
 	}
 
 	// 13: บันทึก

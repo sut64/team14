@@ -332,6 +332,12 @@ func SetupDatabase() {
 	}
 	db.Model(&Germ{}).Create(&g5)
 
+	g6 := Germ{
+                Name: "ไข้หวัดใหญ่สายพันธุ์บี",
+        }
+        db.Model(&Germ{}).Create(&g6)
+
+
 	// CatchingType Data
 	animal_to_human := CatchingType{
 		Title: "ติดต่อจากสัตว์สู่คน",

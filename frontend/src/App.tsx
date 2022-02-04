@@ -28,7 +28,7 @@ import HomeIcon from "@material-ui/icons/Home";
 //import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 import FaceIcon from '@material-ui/icons/Face';
 import UnarchiveIcon from '@material-ui/icons/Unarchive';
-import CoronavirusIcon from '@mui/icons-material/Coronavirus';
+import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 
 import RoomDataList from "./components/RoomDataList";
 import RoomDataListCreate from "./components/RoomDataListCreate";
@@ -137,7 +137,7 @@ export default function MiniDrawer() {
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
     { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
-    { name: "Contagious", icon: <CoronavirusIcon />, path: "/contagious" },
+    { name: "Contagious", icon: <EmojiNatureIcon />, path: "/contagious" },
   ];
 
   useEffect(() => {

@@ -35,6 +35,10 @@ func SetupDatabase() {
 		&Symptom{},
 		&Screening{},
 		&Appointment{},
+		&Germ{},
+		&CatchingType{},
+		&RiskGroupType{},
+		&Contagious{},
 	)
 
 	db = database
@@ -72,16 +76,26 @@ func SetupDatabase() {
 		Password: string(password),
 	})
 
+	db.Model(&Officer{}).Create(&Officer{
+                Name:     "Jirawan",
+                Email:    "jirawan@gmail.com",
+                Password: string(password),
+        })
+
+
 	var Mutant Officer
 	var Titan Officer
 	var a Officer
 	var b Officer
 	var wittaya Officer
+	var jirawan Officer
+
 	db.Raw("SELECT * FROM officers WHERE email = ?", "MUTANT@gmail.com").Scan(&Mutant)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "TITAN@example.com").Scan(&Titan)
 	db.Raw("Select * FROM officers WHERE email = ?", "aaa@example.com").Scan(&a)
 	db.Raw("Select * FROM officers WHERE email = ?", "bbb@example.com").Scan(&b)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "wittaya@gmail.com").Scan(&wittaya)
+	db.Raw("SELECT * FROM officers WHERE email = ?", "jirawan@gmail.com").Scan(&jirawan)
 
 	// - Patient Data -
 	c := Patient{
@@ -291,4 +305,98 @@ func SetupDatabase() {
 		Age: "ปี-ปี",
 	}
 	db.Model(&Age{}).Create(&YY)
+
+	// Germ Data
+	g1 := Germ{
+		Name: "ไข้หวัดใหญ่สายพันธ์ุเอ",
+	}
+	db.Model(&Germ{}).Create(&g1)
+
+	g2 := Germ{
+		Name: "เดงกี",
+	}
+	db.Model(&Germ{}).Create(&g2)
+
+	g3 := Germ{
+		Name: "ลาสซา",
+	}
+	db.Model(&Germ{}).Create(&g3)
+
+	g4 := Germ{
+		Name: "วาริโอลา",
+	}
+	db.Model(&Germ{}).Create(&g4)
+
+	g5 := Germ{
+		Name: "โคโรนาสายพันธุ์ใหม่ 2019",
+	}
+	db.Model(&Germ{}).Create(&g5)
+
+	// CatchingType Data
+	animal_to_human := CatchingType{
+		Title: "ติดต่อจากสัตว์สู่คน",
+	}
+	db.Model(&CatchingType{}).Create(&animal_to_human)
+
+	human_to_human := CatchingType{
+		Title: "ติดต่อจากคนสู่คน",
+	}
+	db.Model(&CatchingType{}).Create(&human_to_human)
+
+	animal_to_animal := CatchingType{
+		Title: "ติดต่อจากสัตว์สู่สัตว์",
+	}
+	db.Model(&CatchingType{}).Create(&animal_to_animal)
+
+	human_to_animal := CatchingType{
+		Title: "ติดต่อจากคนสู่สัตว์",
+	}
+	db.Model(&CatchingType{}).Create(&human_to_animal)
+
+	// RiskGroupType Data
+	RG1 := RiskGroupType{
+		Title: "เด็กเล็ก",
+	}
+	db.Model(&RiskGroupType{}).Create(&RG1)
+
+	RG2 := RiskGroupType{
+		Title: "ผู้สูงอายุ",
+	}
+	db.Model(&RiskGroupType{}).Create(&RG2)
+
+	RG3 := RiskGroupType{
+		Title: "บุคคลทั่วไป",
+	}
+	db.Model(&RiskGroupType{}).Create(&RG3)
+
+	// Contagious Data
+	db.Model(&Contagious{}).Create(&Contagious{
+		Name:          "ไข้ลาสซา",
+		Germ:          g3,
+		CatchingType:  animal_to_human,
+		Symptom:       "มีไข้ อ่อนแรง ไม่สบายตัว มีเลือดออกง่ายผิดปกติ",
+		Incubation:    14,
+		RiskGroupType: RG3,
+		Date:          time.Now(),
+	})
+
+	db.Model(&Contagious{}).Create(&Contagious{
+		Name:          "ไข้เลือดออก",
+		Germ:          g2,
+		CatchingType:  animal_to_human,
+		Symptom:       "มีไข้ ปวดหัว วิงเวียน คลื่นไส้อาเจียน ปวดรอบกระบอกตา ปวดตามกล้ามเนื้อ",
+		Incubation:    7,
+		RiskGroupType: RG3,
+		Date:          time.Now(),
+	})
+
+	db.Model(&Contagious{}).Create(&Contagious{
+		Name:          "โรคฝีดาษ",
+		Germ:          g4,
+		CatchingType:  human_to_human,
+		Symptom:       "มีไข้สูง รู้สึกไม่สบายตัว หนาวสั่น ปวดศีรษะ อ่อนเพลียอย่างรุนแรง ปวดหลังอย่างรุนแรง อาเจียน",
+		Incubation:    12,
+		RiskGroupType: RG3,
+		Date:          time.Now(),
+	})
 }

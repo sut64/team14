@@ -85,6 +85,34 @@ func main() {
 			protected.POST("/appointments", controller.CreateAppoint)
 			protected.PATCH("/appointments", controller.UpdateAppointment)
 			protected.DELETE("/appointments/:id", controller.DeleteAppointment)
+
+			// Germ Routes
+			r.GET("/germ", controller.ListGerm)
+			r.GET("/germ/:id", controller.GetGerm)
+			r.POST("/germ", controller.CreateGerm)
+			r.PATCH("/germ", controller.UpdateGerm)
+			r.DELETE("/germ/:id", controller.DeleteGerm)
+
+			// CatchingType Routes
+			r.GET("/catching_type", controller.ListCatchingType)
+			r.GET("/catching_type/:id", controller.GetCatchingType)
+			r.POST("/catching_type", controller.CreateCatchingType)
+			r.PATCH("/catching_type", controller.UpdateCatchingType)
+			r.DELETE("/catching_type/:id", controller.DeleteCatchingType)
+
+			// RiskGroupType Routes
+			r.GET("/risk_group_type", controller.ListRiskGroupType)
+			r.GET("/risk_group_type/:id", controller.GetRiskGroupType)
+			r.POST("/risk_group_type", controller.CreateRiskGroupType)
+			r.PATCH("/risk_group_type", controller.UpdateRiskGroupType)
+			r.DELETE("/risk_group_type/:id", controller.DeleteRiskGroupType)
+
+			// Contagious Routes
+			r.GET("/contagious", controller.ListContagious)
+			r.GET("/contagious/:id", controller.GetContagious)
+			r.POST("/contagious", controller.CreateContagious)
+			r.PATCH("/contagious", controller.UpdateContagious)
+			r.DELETE("/contagious/:id", controller.DeleteContagious)
 		}
 	}
 	// User Routes

@@ -40,7 +40,7 @@ func TestNoteNotBlank(t *testing.T) {
 	g.Expect(err.Error()).To(gomega.Equal("Note can not be blank"))
 }
 
-func TestAmountDayMustMoreThanO(t *testing.T) {
+func TestAmountDayMoreThanO(t *testing.T) {
 	g := gomega.NewGomegaWithT(t)
 
 	roomdatalist := RoomDataList{

@@ -62,8 +62,7 @@ function RoomDataListCreate() {
     method: "GET",
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json", },
   };
 
   const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
@@ -99,7 +98,7 @@ function RoomDataListCreate() {
 
   const getOfficer = async () => {
     let uid = localStorage.getItem("uid");
-    fetch(`${apiUrl}/officer/ ${uid}`, requestOptions)
+    fetch(`${apiUrl}/officers/ ${uid}`, requestOptions)
       .then((response) => response.json())
       .then((res) => {
         RoomDataList.OfficerID = res.data.ID
@@ -168,7 +167,7 @@ function RoomDataListCreate() {
       PatientID: convertType(RoomDataList.PatientID),
       SpecialistID: convertType(RoomDataList.SpecialistID),
       RoomID: convertType(RoomDataList.RoomID),
-      Day: typeof RoomDataList.Day === "string" ? parseInt(RoomDataList.Day) : 0,
+      Day: typeof RoomDataList.Day === "string" ? parseInt(RoomDataList.Day) : 0 ,
       Note: RoomDataList.Note ,
       EnterRoomTime: selectedDate,
     };
@@ -184,7 +183,7 @@ function RoomDataListCreate() {
       body: JSON.stringify(data),
     };
 
-    fetch(`${apiUrl}/room_data_lists`, requestOptionsPost)
+    fetch(`${apiUrl}/roomdatalist`, requestOptionsPost)
       .then((response) => response.json())
       .then((res) => {
         if (res.data) {
@@ -362,8 +361,7 @@ function RoomDataListCreate() {
                   name="enterroomtime"
                   value={selectedDate}
                   onChange={handleDateChange}
-                  disableFuture
-                  disablePast
+                  
                   
                   label="Please select Enter time"
                   minDate={new Date("2018-01-01T00:00")}

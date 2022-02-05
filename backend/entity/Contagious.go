@@ -22,7 +22,7 @@ type Contagious struct {
 	RiskGroupTypeID *uint
 	RiskGroupType   RiskGroupType `gorm:"references:id" valid:"-"`
 
-//	Prevention         []Prevention         `gorm:"foreignKey:ContagiosID"`
-	MedicineandVaccine []MedicineandVaccine `gorm:"foreignKey:ContagiuosID"`
+//	Prevention         []Prevention         `gorm:"foreignKey:ContagiousID"`
+	MedicineandVaccine []MedicineandVaccine `gorm:"foreignKey:ContagiousID"`
 }
 

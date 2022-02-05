@@ -18,9 +18,9 @@ type MedicineandVaccine struct {
 	DosageFormID *uint
 	DosageForm   DosageForm `gorm:"references:id"`
 
-	//Contagios ทำหน้าที่เป็น FK
-	ContagiosID *uint
-	Contagios   Contagios `gorm:"references:id"`
+	//Contagious ทำหน้าที่เป็น FK
+	ContagiousID *uint
+	Contagious   Contagious `gorm:"references:id"`
 
 	//Age ทำหน้าที่เป็น FK
 	AgeID *uint

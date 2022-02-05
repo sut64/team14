@@ -376,7 +376,7 @@ func SetupDatabase() {
 	db.Model(&RiskGroupType{}).Create(&RG3)
 
 	// Contagious Data
-	db.Model(&Contagious{}).Create(&Contagious{
+	C1 := Contagious{
 		Name:          "ไข้ลาสซา",
 		Germ:          g3,
 		CatchingType:  animal_to_human,
@@ -384,9 +384,10 @@ func SetupDatabase() {
 		Incubation:    14,
 		RiskGroupType: RG3,
 		Date:          time.Now(),
-	})
+	}
+	db.Model(&Contagious{}).Create(&C1)
 
-	db.Model(&Contagious{}).Create(&Contagious{
+	C2 := Contagious{
 		Name:          "ไข้เลือดออก",
 		Germ:          g2,
 		CatchingType:  animal_to_human,
@@ -394,9 +395,10 @@ func SetupDatabase() {
 		Incubation:    7,
 		RiskGroupType: RG3,
 		Date:          time.Now(),
-	})
+	}
+	db.Model(&Contagious{}).Create(&C2)
 
-	db.Model(&Contagious{}).Create(&Contagious{
+	C3 := Contagious{
 		Name:          "โรคฝีดาษ",
 		Germ:          g4,
 		CatchingType:  human_to_human,
@@ -404,5 +406,6 @@ func SetupDatabase() {
 		Incubation:    12,
 		RiskGroupType: RG3,
 		Date:          time.Now(),
-	})
+	}
+	db.Model(&Contagious{}).Create(&C3)
 }

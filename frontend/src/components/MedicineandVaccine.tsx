@@ -129,7 +129,7 @@ function MedicineandVaccines() {
                  <TableCell align="center">{item.MinAge}</TableCell>
                  <TableCell align="center">{item.MaxAge}</TableCell>
                  <TableCell align="center">{item.Age.Age}</TableCell>
-                 <TableCell align="center">{item.Contagious.Contagious}</TableCell>
+                 <TableCell align="center">{item.Contagious.Name}</TableCell>
                  <TableCell align="center">{format((new Date(item.Date)), 'dd MMMM yyyy hh:mm a')}</TableCell>
                </TableRow>
              ))}

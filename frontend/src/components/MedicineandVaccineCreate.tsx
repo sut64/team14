@@ -101,11 +101,11 @@ function MedicineandVaccineCreate() {
       };
 
       const getContagious = async () => {
-        fetch(`${apiUrl}/contagios`, requestOptions)
+        fetch(`${apiUrl}/contagious`, requestOptions)
           .then((response) => response.json())
           .then((res) => {
             if (res.data) {
-              setContagios(res.data);
+              setContagious(res.data);
             } else {
               console.log("else");
             }
@@ -342,7 +342,7 @@ function MedicineandVaccineCreate() {
                                 </option>
                                    {contagious.map((item: ContagiousInterface) => (
                                 <option value={item.ID} key={item.ID}>
-                                    {item.Contagious}
+                                    {item.Name}
                                 </option>
                                 ))}
                             </Select>

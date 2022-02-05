@@ -14,7 +14,7 @@ func CreateMedicineandVaccine(c *gin.Context) {
 	var category entity.Category
 	var dosageForm entity.DosageForm
 	var age entity.Age
-	var contagios entity.Contagios
+	var contagious entity.Contagious
 
 	// ผลลัพธ์ที่ได้จากขั้นตอนที่ 9 จะถูก bind เข้าตัวแปร MedicineandVaccine
 	if err := c.ShouldBindJSON(&medicineandvaccine); err != nil {
@@ -40,9 +40,9 @@ func CreateMedicineandVaccine(c *gin.Context) {
 		return
 	}
 
-	// 13: ค้นหา contagios ด้วย id
-	if tx := entity.DB().Where("id = ?", medicineandvaccine.ContagiosID).First(&contagios); tx.RowsAffected == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "contagios not found"})
+	// 13: ค้นหา contagious ด้วย id
+	if tx := entity.DB().Where("id = ?", medicineandvaccine.ContagiousID).First(&contagious); tx.RowsAffected == 0 {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "contagious not found"})
 		return
 	}
 
@@ -51,7 +51,7 @@ func CreateMedicineandVaccine(c *gin.Context) {
 		Category:   category,                  // โยงความสัมพันธ์กับ Entity category
 		Age:        age,                       // โยงความสัมพันธ์กับ Entity age
 		DosageForm: dosageForm,                // โยงความสัมพันธ์กับ Entity DosageForm
-		Contagios:  contagios,                 // โยงความสัมพันธ์กับ Entity contagios
+		Contagious:  contagious,                 // โยงความสัมพันธ์กับ Entity contagious
 		RegNo:      medicineandvaccine.RegNo,  // ตั้งค่าฟิลด์ RegNo
 		Name:       medicineandvaccine.Name,   // ตั้งค่าฟิลด์ Name
 		MinAge:     medicineandvaccine.MinAge, // ตั้งค่าฟิลด์ MinAge
@@ -71,7 +71,7 @@ func CreateMedicineandVaccine(c *gin.Context) {
 func GetMedicineandVaccine(c *gin.Context) {
 	var medicineandvaccine entity.MedicineandVaccine
 	id := c.Param("id")
-	if err := entity.DB().Preload("Category").Preload("Age").Preload("DosageForm").Preload("Contagios").Raw("SELECT * FROM medicineand_vaccines WHERE id = ?", id).Find(&medicineandvaccine).Error; err != nil {
+	if err := entity.DB().Preload("Category").Preload("Age").Preload("DosageForm").Preload("Contagious").Raw("SELECT * FROM medicineand_vaccines WHERE id = ?", id).Find(&medicineandvaccine).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
@@ -82,7 +82,7 @@ func GetMedicineandVaccine(c *gin.Context) {
 // GET /medicinesandvaccine
 func ListMedicineandVaccines(c *gin.Context) {
 	var medicineandvaccines []entity.MedicineandVaccine
-	if err := entity.DB().Preload("Category").Preload("Age").Preload("DosageForm").Preload("Contagios").Raw("SELECT * FROM medicineand_vaccines").Find(&medicineandvaccines).Error; err != nil {
+	if err := entity.DB().Preload("Category").Preload("Age").Preload("DosageForm").Preload("Contagious").Raw("SELECT * FROM medicineand_vaccines").Find(&medicineandvaccines).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}

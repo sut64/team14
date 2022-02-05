@@ -19,7 +19,7 @@ import { KeyboardDateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pi
 import { MedicineandVaccineInterface } from "../models/IMedicineandVaccine";
 import { CategoryInterface } from "../models/ICategory";
 import { DosageFormInterface } from "../models/IDosageForm";
-import { ContagiosInterface } from "../models/IContagios";
+import { ContagiousInterface } from "../models/IContagious";
 import { AgeInterface } from "../models/IAge";
 
 function Alert(props: AlertProps) {
@@ -37,7 +37,7 @@ function MedicineandVaccineCreate() {
     const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
     const [categories, setCategorys] = useState<CategoryInterface[]>([]);
     const [dosageForms, setDosageForms] = useState<DosageFormInterface[]>([]);
-    const [contagios, setContagios] = useState<ContagiosInterface[]>([]);
+    const [contagious, setContagious] = useState<ContagiousInterface[]>([]);
     const [ages, setAges] = useState<AgeInterface[]>([]);
     const [medicineandvaccines, setMedicineandVaccines] = useState<Partial<MedicineandVaccineInterface>>(
         {}
@@ -100,7 +100,7 @@ function MedicineandVaccineCreate() {
           });
       };
 
-      const getContagios = async () => {
+      const getContagious = async () => {
         fetch(`${apiUrl}/contagios`, requestOptions)
           .then((response) => response.json())
           .then((res) => {
@@ -127,7 +127,7 @@ function MedicineandVaccineCreate() {
       useEffect(() => {
         getCategory();
         getDosageForm();
-        getContagios();
+        getContagious();
         getAge();
       }, []);
 
@@ -141,7 +141,7 @@ function MedicineandVaccineCreate() {
                 CategoryID: convertType(medicineandvaccines.CategoryID),
                 DosageFormID: convertType(medicineandvaccines.DosageFormID),
                 AgeID: convertType(medicineandvaccines.AgeID),
-                ContagiosID: convertType(medicineandvaccines.ContagiosID),
+                ContagiousID: convertType(medicineandvaccines.ContagiousID),
                 RegNo: medicineandvaccines.RegNo,
                 Name: medicineandvaccines.Name,
                 Date: selectedDate,
@@ -331,18 +331,18 @@ function MedicineandVaccineCreate() {
                             <p>ใช้ในโรค</p>
                             <Select
                                 native
-                                value={medicineandvaccines.ContagiosID}
+                                value={medicineandvaccines.ContagiousID}
                                 onChange={handleInputChange}
                                 inputProps={{
-                                name: "ContagiosID",
+                                name: "ContagiousID",
                                 }}
                             >
                                 <option aria-label="None" value="">
                                     กรุณาเลือกโรคติดต่อ
                                 </option>
-                                   {contagios.map((item: ContagiosInterface) => (
+                                   {contagious.map((item: ContagiousInterface) => (
                                 <option value={item.ID} key={item.ID}>
-                                    {item.Contagios}
+                                    {item.Contagious}
                                 </option>
                                 ))}
                             </Select>

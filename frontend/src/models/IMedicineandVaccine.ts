@@ -1,6 +1,6 @@
 import { AgeInterface } from "./IAge";
 import { CategoryInterface } from "./ICategory";
-import { ContagiosInterface } from "./IContagios";
+import { ContagiousInterface } from "./IContagious";
 import { DosageFormInterface } from "./IDosageForm";
 
 export interface MedicineandVaccineInterface {
@@ -12,8 +12,8 @@ export interface MedicineandVaccineInterface {
 	MaxAge: number,
 	DosageFormID: number,
 	DosageForm:   DosageFormInterface, 
-	ContagiosID: number,
-	Contagios:  ContagiosInterface, 
+	ContagiousID: number,
+	Contagious:  ContagiousInterface, 
 	AgeID: number,
 	Age:   AgeInterface, 
 	CategoryID: number,

@@ -87,32 +87,32 @@ func main() {
 			protected.DELETE("/appointments/:id", controller.DeleteAppointment)
 
 			// Germ Routes
-			r.GET("/germ", controller.ListGerm)
-			r.GET("/germ/:id", controller.GetGerm)
-			r.POST("/germ", controller.CreateGerm)
-			r.PATCH("/germ", controller.UpdateGerm)
-			r.DELETE("/germ/:id", controller.DeleteGerm)
+			protected.GET("/germ", controller.ListGerm)
+			protected.GET("/germ/:id", controller.GetGerm)
+			protected.POST("/germ", controller.CreateGerm)
+			protected.PATCH("/germ", controller.UpdateGerm)
+			protected.DELETE("/germ/:id", controller.DeleteGerm)
 
 			// CatchingType Routes
-			r.GET("/catching_type", controller.ListCatchingType)
-			r.GET("/catching_type/:id", controller.GetCatchingType)
-			r.POST("/catching_type", controller.CreateCatchingType)
-			r.PATCH("/catching_type", controller.UpdateCatchingType)
-			r.DELETE("/catching_type/:id", controller.DeleteCatchingType)
+			protected.GET("/catching_type", controller.ListCatchingType)
+			protected.GET("/catching_type/:id", controller.GetCatchingType)
+			protected.POST("/catching_type", controller.CreateCatchingType)
+			protected.PATCH("/catching_type", controller.UpdateCatchingType)
+			protected.DELETE("/catching_type/:id", controller.DeleteCatchingType)
 
 			// RiskGroupType Routes
-			r.GET("/risk_group_type", controller.ListRiskGroupType)
-			r.GET("/risk_group_type/:id", controller.GetRiskGroupType)
-			r.POST("/risk_group_type", controller.CreateRiskGroupType)
-			r.PATCH("/risk_group_type", controller.UpdateRiskGroupType)
-			r.DELETE("/risk_group_type/:id", controller.DeleteRiskGroupType)
+			protected.GET("/risk_group_type", controller.ListRiskGroupType)
+			protected.GET("/risk_group_type/:id", controller.GetRiskGroupType)
+			protected.POST("/risk_group_type", controller.CreateRiskGroupType)
+			protected.PATCH("/risk_group_type", controller.UpdateRiskGroupType)
+			protected.DELETE("/risk_group_type/:id", controller.DeleteRiskGroupType)
 
 			// Contagious Routes
-			r.GET("/contagious", controller.ListContagious)
-			r.GET("/contagious/:id", controller.GetContagious)
-			r.POST("/contagious", controller.CreateContagious)
-			r.PATCH("/contagious", controller.UpdateContagious)
-			r.DELETE("/contagious/:id", controller.DeleteContagious)
+			protected.GET("/contagious", controller.ListContagious)
+			protected.GET("/contagious/:id", controller.GetContagious)
+			protected.POST("/contagious", controller.CreateContagious)
+			protected.PATCH("/contagious", controller.UpdateContagious)
+			protected.DELETE("/contagious/:id", controller.DeleteContagious)
 		}
 	}
 	// User Routes

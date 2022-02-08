@@ -56,6 +56,7 @@ function RoomDataListCreate() {
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const apiUrl = "http://localhost:8080";
   const requestOptions = {
@@ -65,13 +66,7 @@ function RoomDataListCreate() {
       "Content-Type": "application/json", },
   };
 
-  const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setSuccess(false);
-    setError(false);
-  };
+  
 
   const handleChange = (
     event: React.ChangeEvent<{ name?: string; value: unknown }>
@@ -81,6 +76,14 @@ function RoomDataListCreate() {
       ...RoomDataList,
       [name]: event.target.value,
     });
+  };
+
+  const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSuccess(false);
+    setError(false);
   };
 
   const handleInputChange = (
@@ -183,15 +186,18 @@ function RoomDataListCreate() {
       body: JSON.stringify(data),
     };
 
-    fetch(`${apiUrl}/roomdatalist`, requestOptionsPost)
+    fetch(`${apiUrl}/appointments`, requestOptionsPost)
       .then((response) => response.json())
       .then((res) => {
         if (res.data) {
           console.log("บันทึกได้")
           setSuccess(true);
+          setErrorMessage("");
         } else {
-          console.log("บันทึกไม่ได้")
+          console.log("บันทึกไม่ได้",res)
           setError(true);
+          setErrorMessage(res.error);
+          
         }
       });
   }
@@ -204,7 +210,7 @@ function RoomDataListCreate() {
       </Snackbar>
       <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="error">
-          บันทึกข้อมูลไม่สำเร็จ
+          บันทึกข้อมูลไม่สำเร็จ {errorMessage}
         </Alert>
       </Snackbar>
       <Paper className={classes.paper}>
@@ -257,7 +263,7 @@ function RoomDataListCreate() {
                 }}
               >
                 <option aria-label="None" value="">
-                  Plase select RoomDetail ID
+                  Plase select Room
                 </option>
 
                 {RoomDetail.map((item: RoomDetailsInterface) => (

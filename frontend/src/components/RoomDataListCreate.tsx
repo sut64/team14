@@ -101,7 +101,7 @@ function RoomDataListCreate() {
 
   const getOfficer = async () => {
     let uid = localStorage.getItem("uid");
-    fetch(`${apiUrl}/officers/ ${uid}`, requestOptions)
+    fetch(`${apiUrl}/officer/ ${uid}`, requestOptions)
       .then((response) => response.json())
       .then((res) => {
         RoomDataList.OfficerID = res.data.ID
@@ -186,7 +186,7 @@ function RoomDataListCreate() {
       body: JSON.stringify(data),
     };
 
-    fetch(`${apiUrl}/appointments`, requestOptionsPost)
+    fetch(`${apiUrl}/room_data_lists`, requestOptionsPost)
       .then((response) => response.json())
       .then((res) => {
         if (res.data) {

@@ -58,6 +58,11 @@ func CreateMedicineandVaccine(c *gin.Context) {
 		MaxAge:     medicineandvaccine.MaxAge, // ตั้งค่าฟิลด์ MaxAge
 		Date:       medicineandvaccine.Date,   // ตั้งค่าฟิลด์ Date
 	}
+	
+	if _, err := govalidator.ValidateStruct(MV); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 
 	// 15: บันทึก
 	if err := entity.DB().Create(&MV).Error; err != nil {

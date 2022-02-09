@@ -82,6 +82,11 @@ func SetupDatabase() {
                 Password: string(password),
         })
 
+	db.Model(&Officer{}).Create(&Officer{
+		Name:     "Nukanda",
+		Email:    "nukanda@gmail.com",
+		Password: string(password),
+	})
 
 	var Mutant Officer
 	var Titan Officer
@@ -89,6 +94,7 @@ func SetupDatabase() {
 	var b Officer
 	var wittaya Officer
 	var jirawan Officer
+	var nukanda Officer
 
 	db.Raw("SELECT * FROM officers WHERE email = ?", "MUTANT@gmail.com").Scan(&Mutant)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "TITAN@example.com").Scan(&Titan)
@@ -96,6 +102,7 @@ func SetupDatabase() {
 	db.Raw("Select * FROM officers WHERE email = ?", "bbb@example.com").Scan(&b)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "wittaya@gmail.com").Scan(&wittaya)
 	db.Raw("SELECT * FROM officers WHERE email = ?", "jirawan@gmail.com").Scan(&jirawan)
+	db.Raw("SELECT * FROM officers WHERE email = ?", "nukanda@gmail.com").Scan(&nukanda)
 
 	// - Patient Data -
 	c := Patient{
@@ -296,13 +303,17 @@ func SetupDatabase() {
 	db.Model(&DosageForm{}).Create(&Perenteral)
 
 	//Age data
+	MM := Age{
+		Age: "เดือน - เดือน",
+	}
+	db.Model(&Age{}).Create(&MM)
 	MY := Age{
-		Age: "เดือน-ปี",
+		Age: "เดือน - ปี",
 	}
 	db.Model(&Age{}).Create(&MY)
 
 	YY := Age{
-		Age: "ปี-ปี",
+		Age: "ปี - ปี",
 	}
 	db.Model(&Age{}).Create(&YY)
 

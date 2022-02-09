@@ -44,6 +44,7 @@ function MedicineandVaccineCreate() {
       );
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     const apiUrl = "http://localhost:8080";
     const requestOptions = {
@@ -60,7 +61,17 @@ function MedicineandVaccineCreate() {
         setSuccess(false);
         setError(false);
     };
-     
+    
+    const handleChange = (
+      event: React.ChangeEvent<{ name?: string; value: unknown }>
+    ) => {
+      const name = event.target.name as keyof typeof medicineandvaccines;
+      setMedicineandVaccines({
+        ...medicineandvaccines,
+        [name]: event.target.value,
+      });
+    };
+
     const handleInputChange = (
         event: React.ChangeEvent<{ name?: string; value: any }>
       ) => {
@@ -145,8 +156,8 @@ function MedicineandVaccineCreate() {
                 RegNo: medicineandvaccines.RegNo,
                 Name: medicineandvaccines.Name,
                 Date: selectedDate,
-                MinAge: typeof medicineandvaccines.MinAge === "string" ? parseInt(medicineandvaccines.MinAge) : 0,
-                MaxAge: typeof medicineandvaccines.MaxAge === "string" ? parseInt(medicineandvaccines.MaxAge) : 0,
+                MinAge: Number(medicineandvaccines.MinAge),
+                MaxAge: Number(medicineandvaccines.MaxAge),
         };
         console.log(data)
 
@@ -165,9 +176,11 @@ function MedicineandVaccineCreate() {
         if (res.data) {
           console.log("บันทึกได้")
           setSuccess(true);
+          setErrorMessage("");
         } else {
           console.log("บันทึกไม่ได้")
           setError(true);
+          setErrorMessage(res.error);
         }
       });
   }
@@ -181,7 +194,7 @@ function MedicineandVaccineCreate() {
             </Snackbar>
             <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="error">
-                    บันทึกข้อมูลไม่สำเร็จ
+                    บันทึกข้อมูลไม่สำเร็จ: {errorMessage}
                 </Alert>
             </Snackbar>
             <Paper className={classes.paper}>
@@ -209,7 +222,7 @@ function MedicineandVaccineCreate() {
                                 multiline
                                 rows={1}
                                 value={medicineandvaccines.RegNo}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                         </FormControl>
                     </Grid>
@@ -222,7 +235,7 @@ function MedicineandVaccineCreate() {
                                 multiline
                                 rows={1}
                                 value={medicineandvaccines.Name}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                         </FormControl>
                     </Grid>
@@ -232,7 +245,7 @@ function MedicineandVaccineCreate() {
                             <Select
                                 native
                                 value={medicineandvaccines.CategoryID}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 inputProps={{
                                 name: "CategoryID",
                                 }}
@@ -254,7 +267,7 @@ function MedicineandVaccineCreate() {
                             <Select
                                 native
                                 value={medicineandvaccines.DosageFormID}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 inputProps={{
                                 name: "DosageFormID",
                                 }}
@@ -278,13 +291,10 @@ function MedicineandVaccineCreate() {
                           variant="outlined"
                           type="number"
                           size="medium"
-                          InputProps={{ inputProps: { min: 1 } }}
-                          InputLabelProps={{
-                          shrink: true,
-                        }}
-                          value={medicineandvaccines.MinAge || ""}
-                          onChange={handleInputChange}
-                        />
+                          placeholder="ใส่อายุต่ำสุด"
+                          value={medicineandvaccines.MinAge}
+                          onChange={handleChange}
+                        />    
                       </FormControl>
                     </Grid>
                     <Grid item xs={6}>
@@ -295,13 +305,10 @@ function MedicineandVaccineCreate() {
                           variant="outlined"
                           type="number"
                           size="medium"
-                          InputProps={{ inputProps: { min: 1 } }}
-                          InputLabelProps={{
-                          shrink: true,
-                        }}
-                          value={medicineandvaccines.MaxAge || ""}
-                          onChange={handleInputChange}
-                        />
+                          placeholder="ใส่อายุสูงสุด"
+                          value={medicineandvaccines.MaxAge}
+                          onChange={handleChange}
+                        />  
                       </FormControl>
                     </Grid>
                     <Grid item xs={8}>
@@ -310,7 +317,7 @@ function MedicineandVaccineCreate() {
                             <Select
                                 native
                                 value={medicineandvaccines.AgeID}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 inputProps={{
                                 name: "AgeID",
                                 }}
@@ -388,3 +395,4 @@ function MedicineandVaccineCreate() {
     )
 };
 export default MedicineandVaccineCreate;
+

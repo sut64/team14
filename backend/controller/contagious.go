@@ -46,7 +46,7 @@ func CreateContagious(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-
+	
 	// 13: สร้าง contagious
 	s := entity.Contagious{
 		Germ:          germ,                  // โยงความสัมพันธ์กับ Entity Germ

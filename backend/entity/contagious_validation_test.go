@@ -69,3 +69,34 @@ func TestContagiousSymptomMore10(t *testing.T) {
 	// err.Error ต้องมี error message แสดงออกมา
 	g.Expect(err.Error()).To(Equal("Symptom must be more than 10"))
 }
+
+// ทดสอบระยะฟักตัวเป็นเลขที่ไม่ได้อยู่ระหว่าง 1 - 90 ต้องเจอ error
+func TestContagiousIncubationNotMinus(t *testing.T) {
+	g := NewGomegaWithT(t)
+
+	fixtures := []int{
+		-7,
+		99,
+	}
+	for _, fixture := range fixtures {
+		contagious := Contagious{
+			Name:       "Abc",
+			Symptom:    "abcdefg hijk",
+			Incubation: fixture, // ผิด
+			Date:       time.Now(),
+		}
+
+		// ตรวจสอบด้วย govalidator
+		ok, err := govalidator.ValidateStruct(contagious)
+
+		// ok ต้องไม่เป็นค่า true แปลว่าต้องจับ error ได้
+		g.Expect(ok).ToNot(BeTrue())
+
+		// err ต้องไม่เป็นค่า nil แปลว่าต้องจับ error ได้
+		g.Expect(err).ToNot(BeNil())
+
+		// err.Error ต้องมี error message แสดงออกมา
+		g.Expect(err.Error()).To(Equal("Incubation must be between 1-90"))
+	}
+}
+

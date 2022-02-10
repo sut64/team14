@@ -10,7 +10,7 @@ type Contagious struct {
 	gorm.Model
 	Name       string `valid:"required~Name cannot be blank"`
 	Symptom    string `valid:"minstringlength(10)~Symptom must be more than 10"`
-	Incubation int
+	Incubation int    `valid:"range(1|90)~Incubation must be between 1-90"`
 	Date       time.Time
 
 	GermID *uint

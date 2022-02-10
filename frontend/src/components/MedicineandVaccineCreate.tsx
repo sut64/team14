@@ -72,16 +72,6 @@ function MedicineandVaccineCreate() {
       });
     };
 
-    const handleInputChange = (
-        event: React.ChangeEvent<{ name?: string; value: any }>
-      ) => {
-        const name = event.target.name as keyof typeof medicineandvaccines;
-        const { value } = event.target;
-        setMedicineandVaccines({ 
-            ...medicineandvaccines, 
-            [name]: value });
-      };
-    
       const handleDateChange = (date: Date | null) => {
         console.log(date);
         setSelectedDate(date);
@@ -339,7 +329,7 @@ function MedicineandVaccineCreate() {
                             <Select
                                 native
                                 value={medicineandvaccines.ContagiousID}
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 inputProps={{
                                 name: "ContagiousID",
                                 }}

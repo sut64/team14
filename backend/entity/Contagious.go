@@ -9,7 +9,7 @@ import (
 type Contagious struct {
 	gorm.Model
 	Name       string `valid:"required~Name cannot be blank"`
-	Symptom    string
+	Symptom    string `valid:"minstringlength(10)~Symptom must be more than 10"`
 	Incubation int
 	Date       time.Time
 

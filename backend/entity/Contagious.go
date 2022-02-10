@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"gorm.io/gorm"
+	"github.com/asaskevich/govalidator"
 )
 
 type Contagious struct {

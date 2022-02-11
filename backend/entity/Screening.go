@@ -12,13 +12,13 @@ type Screening	struct {
 	CongenitalDisease	string	`valid:"required~CongenitalDisease can not be blank"`
 	Time			time.Time `valid:"IsPresent~Screening Date must be in Present"`
 	PatientID		*uint
-	Patient			Patient 
-	RoomID	*uint
-	Room		Room 
+	Patient			Patient `gorm:"references:id" valid:"-"`
+	RoomID			*uint
+	Room			Room `gorm:"references:id" valid:"-"`
 	SymptomID		*uint
-	Symptom			Symptom 
-	OfficerID 			*uint
-	Officer       		Officer
+	Symptom			Symptom `gorm:"references:id" valid:"-"`
+	OfficerID 		*uint
+	Officer       		Officer `gorm:"references:id" valid:"-"`
 }
 func init() {
 	govalidator.CustomTypeTagMap.Set("IsFuture", func(i interface{}, context interface{}) bool {

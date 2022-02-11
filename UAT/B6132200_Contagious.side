@@ -1,38 +1,36 @@
 {
-  "id": "90a51e6c-da3a-4013-94a6-d1f59e92d43d",
+  "id": "bad66485-3a70-4932-a5e8-5ac30da75515",
   "version": "2.0",
-  "name": "Contagious",
+  "name": "B6132200_Contagious",
   "url": "http://localhost:3000/",
   "tests": [{
-    "id": "09caeae3-e7c7-4788-8d62-c02529f37ea4",
+    "id": "148a36cf-2870-4f46-8c0d-0dc2e49b276f",
     "name": "B6132200 - บันทึกข้อมูล Contagious สำเร็จ",
     "commands": [{
-      "id": "97a0e2fa-c30c-42a7-ba5f-446355bd3e9c",
+      "id": "b02abf47-fdf4-43ec-8230-816edb493097",
       "comment": "",
       "command": "open",
       "target": "http://localhost:3000/",
       "targets": [],
       "value": ""
     }, {
-      "id": "edb9f445-1c40-443c-9915-c392b97da747",
+      "id": "fb3f3034-61eb-4912-ad17-0e3515f5e6b2",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
-      "id": "099e54bb-1223-40df-95a6-a7dc2e34ed03",
+      "id": "db9f301c-08d5-478a-81c2-8da8ba38c34b",
       "comment": "",
       "command": "click",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root",
+      "target": "css=.makeStyles-a-12:nth-child(6) path",
       "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/ul/a[2]/div/div", "xpath:idRelative"],
-        ["xpath=//a[2]/div/div", "xpath:position"]
+        ["css=.makeStyles-a-12:nth-child(6) path", "css:finder"]
       ],
       "value": ""
     }, {
-      "id": "13dfb0c9-675a-47dd-afd9-57391920c836",
+      "id": "8bb7c709-d966-447f-8f42-ce889387aad4",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-contained > .MuiButton-label",
@@ -44,7 +42,7 @@
       ],
       "value": ""
     }, {
-      "id": "8fa1ee25-a579-45c7-9c91-ff148b724e75",
+      "id": "e1ad0ab0-f4cd-46e0-839b-b72f00399aec",
       "comment": "",
       "command": "click",
       "target": "id=Name",
@@ -57,7 +55,7 @@
       ],
       "value": ""
     }, {
-      "id": "56ff22bd-40ba-4cc3-bcc6-c36f57f21313",
+      "id": "3b10fd8b-57a2-4a97-8692-8ed65d514d58",
       "comment": "",
       "command": "type",
       "target": "id=Name",
@@ -70,7 +68,7 @@
       ],
       "value": "ไข้เลือดออก"
     }, {
-      "id": "51f263e3-14ec-4ed4-9a78-a4905a0e3d33",
+      "id": "07a57213-11e2-4f1d-9cc7-46a5d574692e",
       "comment": "",
       "command": "click",
       "target": "name=GermID",
@@ -83,14 +81,14 @@
       ],
       "value": ""
     }, {
-      "id": "1364c5ae-bf0d-4d6d-90ce-c6bbe5e531df",
+      "id": "414a1358-d838-44ab-8890-dafae57fca8b",
       "comment": "",
       "command": "select",
       "target": "name=GermID",
       "targets": [],
       "value": "label=เดงกี"
     }, {
-      "id": "f5faaf7f-4bda-4c07-a856-eab596cc16b4",
+      "id": "8b357e63-a4e7-4b8e-8379-f435e2766cef",
       "comment": "",
       "command": "click",
       "target": "name=CatchingTypeID",
@@ -103,14 +101,14 @@
       ],
       "value": ""
     }, {
-      "id": "8ee022e0-9003-4d5a-8ef7-5d6e71531cf0",
+      "id": "0c1184fb-978a-449c-86a8-9c64e1aedde9",
       "comment": "",
       "command": "select",
       "target": "name=CatchingTypeID",
       "targets": [],
       "value": "label=ติดต่อจากสัตว์สู่คน"
     }, {
-      "id": "b0cf0191-1a6b-4d43-b050-9a338b64f8b3",
+      "id": "9664705c-c03d-4b46-993a-ee61e3e565cc",
       "comment": "",
       "command": "click",
       "target": "id=Symptom",
@@ -123,315 +121,7 @@
       ],
       "value": ""
     }, {
-      "id": "b587e05c-ebdb-4426-ac43-9f07f1779bce",
-      "comment": "",
-      "command": "type",
-      "target": "id=Symptom",
-      "targets": [
-        ["id=Symptom", "id"],
-        ["css=#Symptom", "css:finder"],
-        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
-      ],
-      "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
-    }, {
-      "id": "c8af606c-119a-4b07-959a-8110f36c289d",
-      "comment": "",
-      "command": "click",
-      "target": "id=Incubation",
-      "targets": [
-        ["id=Incubation", "id"],
-        ["css=#Incubation", "css:finder"],
-        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "abedc841-ffa5-43c5-b609-70d66ddb6ce7",
-      "comment": "",
-      "command": "type",
-      "target": "id=Incubation",
-      "targets": [
-        ["id=Incubation", "id"],
-        ["css=#Incubation", "css:finder"],
-        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
-      ],
-      "value": "7"
-    }, {
-      "id": "40f8fd4b-0d65-4550-8fff-32e2c5168cdd",
-      "comment": "",
-      "command": "click",
-      "target": "name=RiskGroupTypeID",
-      "targets": [
-        ["name=RiskGroupTypeID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='RiskGroupTypeID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[6]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[6]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "f0a48b23-a567-4931-b549-d3589fe86bc1",
-      "comment": "",
-      "command": "select",
-      "target": "name=RiskGroupTypeID",
-      "targets": [],
-      "value": "label=บุคคลทั่วไป"
-    }, {
-      "id": "3cc6e1ba-3ee4-4d86-b561-c85c1677cf6e",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
-      "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "eb12827e-1965-4a9b-93d3-580658d2cf65",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
-      "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "4c8ff941-8b1f-4c23-b316-7187a526b3e1",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
-      "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "cd4e0891-48ec-4670-aa61-978742905188",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiPickersDay-current > .MuiIconButton-label",
-      "targets": [
-        ["css=.MuiPickersDay-current > .MuiIconButton-label", "css:finder"],
-        ["xpath=//div[2]/div[4]/button/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "8991f6be-74ac-48f1-b0a4-2dda75395102",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
-        ["xpath=//div[2]/button[2]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e5fd2a2c-a965-453a-8646-7fc59aac954c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
-        ["xpath=//div[8]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "daee5192-110a-44bb-9dbf-2714a2d4e4b8",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiAlert-root",
-      "targets": [
-        ["css=.MuiAlert-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "cae9d11f-72de-4154-a377-3ee9a6ff0d7d",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.MuiAlert-message",
-      "targets": [
-        ["css=.MuiAlert-message", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
-        ["xpath=//div/div/div[2]", "xpath:position"]
-      ],
-      "value": "บันทึกข้อมูลสำเร็จ"
-    }]
-  }, {
-    "id": "b7b6845b-99f8-4bb6-b87c-6c7d3e1dc49d",
-    "name": "B6132200 - ตรวจสอบชื่อโรค Name ต้องไม่เป็นค่าว่าง",
-    "commands": [{
-      "id": "9eed56aa-dabe-4170-b632-4a883f1c9a86",
-      "comment": "",
-      "command": "open",
-      "target": "http://localhost:3000/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "3c618642-5708-44db-ae62-52869ba9e6ff",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "73e4a4b2-056b-48f9-9c23-6e83501edcb3",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root",
-      "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/ul/a[2]/div/div", "xpath:idRelative"],
-        ["xpath=//a[2]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "55f50654-ce82-4ca2-a205-a6c79317601f",
-      "comment": "",
-      "command": "click",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root",
-      "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/ul/a[2]/div/div", "xpath:idRelative"],
-        ["xpath=//a[2]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2b42146a-f5b3-47e3-97b6-a77bbbcc17df",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root",
-      "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/ul/a[2]/div/div", "xpath:idRelative"],
-        ["xpath=//a[2]/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "34dd8b44-1c5e-4c54-b705-751f7901b636",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.MuiButton-contained > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
-        ["xpath=//a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "fa63e745-5096-4051-ac4e-0bb62803c4ec",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-contained > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
-        ["xpath=//a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5dc6df2d-a30c-4c11-8bb4-6f394acad0f7",
-      "comment": "",
-      "command": "click",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "670c3be2-7e02-4843-b88c-32fad72ad79b",
-      "comment": "",
-      "command": "type",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "ไข้เลือดออก"
-    }, {
-      "id": "a2fd0ec0-bfc7-458c-a701-138903303d12",
-      "comment": "",
-      "command": "type",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "c498cf78-43e4-4b76-92e2-7845a36e81d3",
-      "comment": "",
-      "command": "click",
-      "target": "name=GermID",
-      "targets": [
-        ["name=GermID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='GermID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "6dab5ca5-52c7-44e7-9c9e-2117c56defeb",
-      "comment": "",
-      "command": "select",
-      "target": "name=GermID",
-      "targets": [],
-      "value": "label=ไข้หวัดใหญ่สายพันธ์ุเอ"
-    }, {
-      "id": "9bbdbe6a-fda6-45ee-bfe5-d4fd49357876",
-      "comment": "",
-      "command": "click",
-      "target": "name=CatchingTypeID",
-      "targets": [
-        ["name=CatchingTypeID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='CatchingTypeID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "27aa43db-2628-4a9a-b63a-594ee3fd4d71",
-      "comment": "",
-      "command": "select",
-      "target": "name=CatchingTypeID",
-      "targets": [],
-      "value": "label=ติดต่อจากคนสู่คน"
-    }, {
-      "id": "f023187a-9cdb-4b90-8084-f8fc5c5f7535",
-      "comment": "",
-      "command": "click",
-      "target": "id=Symptom",
-      "targets": [
-        ["id=Symptom", "id"],
-        ["css=#Symptom", "css:finder"],
-        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "74f97544-2fe0-43c8-a386-32e116c79154",
+      "id": "fd68ee33-e726-4832-84f7-f9e7dbc24d47",
       "comment": "",
       "command": "type",
       "target": "id=Symptom",
@@ -444,7 +134,7 @@
       ],
       "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
     }, {
-      "id": "06ce34b4-d7c7-4660-8dc8-7da71b35e6cc",
+      "id": "5fd824ec-42cb-4b53-8ca9-c44bcb0c962e",
       "comment": "",
       "command": "click",
       "target": "id=Incubation",
@@ -457,7 +147,7 @@
       ],
       "value": ""
     }, {
-      "id": "4bb9b47c-2562-48fe-ae44-ce7dff958572",
+      "id": "6dda1ae0-453e-4d56-bcfe-08b81309edf9",
       "comment": "",
       "command": "type",
       "target": "id=Incubation",
@@ -468,9 +158,9 @@
         ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
         ["xpath=//div[5]/div/div/div/input", "xpath:position"]
       ],
-      "value": "8"
+      "value": "5"
     }, {
-      "id": "9c26340b-b4c3-4d45-92ff-e5b5725ce680",
+      "id": "833b3dfb-909c-48fc-ac74-1ad424ad21c8",
       "comment": "",
       "command": "click",
       "target": "name=RiskGroupTypeID",
@@ -483,34 +173,34 @@
       ],
       "value": ""
     }, {
-      "id": "4197cad3-b5c2-40dd-8f63-991dd01075d2",
+      "id": "b534fe48-8034-4d5e-8af5-d2aa150b2822",
       "comment": "",
       "command": "select",
       "target": "name=RiskGroupTypeID",
       "targets": [],
       "value": "label=บุคคลทั่วไป"
     }, {
-      "id": "ed6791f9-4d6b-4cc5-af5f-b969b447cc60",
+      "id": "77f40844-2440-430c-8e1e-815182ef3a4d",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
       "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
       ],
       "value": ""
     }, {
-      "id": "c7a39618-dfa0-4fd9-8f74-905995f62bf2",
+      "id": "6a5bddbe-b3e2-4c84-970c-0491a1fb1c71",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiPickersDay-current .MuiTypography-root",
+      "target": "css=.MuiPickersDay-current",
       "targets": [
-        ["css=.MuiPickersDay-current .MuiTypography-root", "css:finder"],
-        ["xpath=//div[2]/div[4]/button/span/p", "xpath:position"],
-        ["xpath=//p[contains(.,'9')]", "xpath:innerText"]
+        ["css=.MuiPickersDay-current", "css:finder"],
+        ["xpath=(//button[@type='button'])[22]", "xpath:attributes"],
+        ["xpath=//div[2]/div[6]/button", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "95a5cde6-b42e-4569-8812-a28fcb80eb5b",
+      "id": "da5d3562-19b2-45eb-9ee9-e9502845460a",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
@@ -521,7 +211,7 @@
       ],
       "value": ""
     }, {
-      "id": "1b28f916-d1d1-4ae4-8892-ba17f869a126",
+      "id": "130fd23a-bb3e-4350-9774-d3b8b1b40c80",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-containedPrimary",
@@ -534,7 +224,7 @@
       ],
       "value": ""
     }, {
-      "id": "51914347-cd88-41c2-acc9-87fce9d97794",
+      "id": "46ccc81a-0020-44f0-bdf8-7ac28b304fc4",
       "comment": "",
       "command": "click",
       "target": "css=.MuiAlert-root",
@@ -545,7 +235,7 @@
       ],
       "value": ""
     }, {
-      "id": "794fc551-9ab5-4412-84d3-f2faf959577a",
+      "id": "7e2fec93-e594-4400-bcb5-983cc2556ff8",
       "comment": "",
       "command": "assertText",
       "target": "css=.MuiAlert-message",
@@ -554,27 +244,50 @@
         ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
         ["xpath=//div/div/div[2]", "xpath:position"]
       ],
-      "value": "บันทึกข้อมูลไม่สำเร็จ: Name cannot be blank"
+      "value": "บันทึกข้อมูลสำเร็จ"
     }]
   }, {
-    "id": "99f40cd9-1216-4e3b-ac06-5dd6b8d03d5e",
-    "name": "B6132200 - ตรวจสอบอาการ Symptom ต้องมากกว่า 10 ตัวอักษร",
+    "id": "9c327e48-2cd6-43f8-b39f-bc0e2da9f0fc",
+    "name": "B6132200 - ตรวจสอบชื่อโรค Name ต้องไม่เป็นค่าว่าง",
     "commands": [{
-      "id": "8c801398-6e84-47b6-a021-6c3463b8f07b",
+      "id": "21f67939-1f92-44a4-bb17-18df02ad6774",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:3000/contagious",
+      "target": "http://localhost:3000/",
       "targets": [],
       "value": ""
     }, {
-      "id": "891fefb0-79ed-488e-8907-f45635ed5ede",
+      "id": "067fb209-4d7a-4890-8af8-297ab7201383",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
-      "id": "688e2df4-d328-4c57-a7c0-dd68beafe2b8",
+      "id": "f6b17a90-f0ea-4bb2-a28d-135a3d4ec81d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(6) > .MuiButtonBase-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(6) > .MuiButtonBase-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[6]/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0747d9a-6628-468f-bdd9-821f2f75e805",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "336a4f43-031c-428a-8962-fb468f4c70fc",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-contained > .MuiButton-label",
@@ -586,33 +299,7 @@
       ],
       "value": ""
     }, {
-      "id": "94ab759a-00a2-4f1e-a15c-dc6ec46df34c",
-      "comment": "",
-      "command": "click",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "74031fcf-415f-44c0-bcbc-8814081c3bbc",
-      "comment": "",
-      "command": "type",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "ไข้เลือดออก"
-    }, {
-      "id": "5b86716a-6738-458b-aeac-8540cd4c3420",
+      "id": "3c0fae84-68f8-4d93-be43-c5ff3a0b71fa",
       "comment": "",
       "command": "click",
       "target": "name=GermID",
@@ -625,14 +312,14 @@
       ],
       "value": ""
     }, {
-      "id": "45cda1f1-31cd-4676-82e5-7c0f063070f8",
+      "id": "9f632d12-66b7-4344-b189-e19486b325e0",
       "comment": "",
       "command": "select",
       "target": "name=GermID",
       "targets": [],
-      "value": "label=ไข้หวัดใหญ่สายพันธ์ุเอ"
+      "value": "label=เดงกี"
     }, {
-      "id": "fce99ef2-0155-418f-9439-a8f6da655f1b",
+      "id": "23d98ef8-473d-4cac-8f93-5f5302068ead",
       "comment": "",
       "command": "click",
       "target": "name=CatchingTypeID",
@@ -645,14 +332,14 @@
       ],
       "value": ""
     }, {
-      "id": "e9154fe2-05ac-4834-8557-e2d07fe2e261",
+      "id": "bb759af6-f911-4441-80ac-f7a064709469",
       "comment": "",
       "command": "select",
       "target": "name=CatchingTypeID",
       "targets": [],
       "value": "label=ติดต่อจากสัตว์สู่คน"
     }, {
-      "id": "08fbaad4-cc28-4723-a3a7-3e60b6b1f186",
+      "id": "bde56e56-9a2e-47aa-8f10-e9ff3c527502",
       "comment": "",
       "command": "click",
       "target": "id=Symptom",
@@ -665,7 +352,272 @@
       ],
       "value": ""
     }, {
-      "id": "cdf206a1-7d59-4e18-875d-5582eac3cb49",
+      "id": "ae6c82f1-0070-48be-8fc6-1f89fc45df68",
+      "comment": "",
+      "command": "type",
+      "target": "id=Symptom",
+      "targets": [
+        ["id=Symptom", "id"],
+        ["css=#Symptom", "css:finder"],
+        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
+    }, {
+      "id": "4ceb8cc9-70e5-465d-9ab3-2e5b8ac168bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=Incubation",
+      "targets": [
+        ["id=Incubation", "id"],
+        ["css=#Incubation", "css:finder"],
+        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cde365f-c89c-4512-9f52-99a2eda7fd62",
+      "comment": "",
+      "command": "type",
+      "target": "id=Incubation",
+      "targets": [
+        ["id=Incubation", "id"],
+        ["css=#Incubation", "css:finder"],
+        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "dce452ae-1fef-4d21-a4d8-f3a79635fb24",
+      "comment": "",
+      "command": "click",
+      "target": "name=RiskGroupTypeID",
+      "targets": [
+        ["name=RiskGroupTypeID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RiskGroupTypeID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[6]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13215828-c729-430a-aafc-3cf8769d17af",
+      "comment": "",
+      "command": "select",
+      "target": "name=RiskGroupTypeID",
+      "targets": [],
+      "value": "label=บุคคลทั่วไป"
+    }, {
+      "id": "ce3049d5-56ec-4201-8289-158b8d9239f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
+      "targets": [
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9320a986-3161-4ae8-952d-fedfcb0def1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersDay-current .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersDay-current .MuiTypography-root", "css:finder"],
+        ["xpath=//div[2]/div[6]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0a920b3-85e7-4249-b9c3-c74b67a56739",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89a9a286-6a48-4edd-8949-6f54d3e5de0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e4fe0dd-792c-406a-bca0-1215e9e42a57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5ccebfe-d57e-4271-88fe-e3ae4cddd3fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a6615d0-36af-4894-b4df-adb41cbd5abd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Name cannot be blank"
+    }]
+  }, {
+    "id": "6b004c51-8cad-49f1-8c0a-67e8dc243172",
+    "name": "B6132200 - ตรวจสอบอาการ Symptom ต้องมากกว่า 10 ตัวอักษร",
+    "commands": [{
+      "id": "d00a4764-8bc0-4942-b9d4-f60fbe129f44",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2798edf4-59b5-44d5-903a-df67057f4fd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfeb66db-2b5c-4206-9bf9-1fa4e8917672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(6) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(6) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f1c7de-3adc-4a33-a6e5-38c7a897f40b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40353a61-00d6-4893-b4af-c9d417880aa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a65f0b3-98f0-4e8f-9809-56d7a21195c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da07c828-0183-4266-a213-ab1066124de4",
+      "comment": "",
+      "command": "type",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ไข้เลือดออก"
+    }, {
+      "id": "d6c47b7f-564e-49be-b5fa-722324433b94",
+      "comment": "",
+      "command": "click",
+      "target": "name=GermID",
+      "targets": [
+        ["name=GermID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='GermID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82ae622b-6c6d-40f6-b93f-7281b44bd3e5",
+      "comment": "",
+      "command": "select",
+      "target": "name=GermID",
+      "targets": [],
+      "value": "label=เดงกี"
+    }, {
+      "id": "f35f0043-3540-4078-9e7a-eda1a25401cd",
+      "comment": "",
+      "command": "click",
+      "target": "name=CatchingTypeID",
+      "targets": [
+        ["name=CatchingTypeID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CatchingTypeID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a83a0f08-13de-45c0-98ab-583997a63884",
+      "comment": "",
+      "command": "select",
+      "target": "name=CatchingTypeID",
+      "targets": [],
+      "value": "label=ติดต่อจากสัตว์สู่คน"
+    }, {
+      "id": "cb59e43e-522b-47cd-80c1-6e1853a6c00d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Symptom",
+      "targets": [
+        ["id=Symptom", "id"],
+        ["css=#Symptom", "css:finder"],
+        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f296a89-0640-4625-b06a-53ec092f8c12",
       "comment": "",
       "command": "type",
       "target": "id=Symptom",
@@ -678,7 +630,7 @@
       ],
       "value": "ไข้"
     }, {
-      "id": "85e035c9-d21d-4915-8ef3-b4f7f7b4837e",
+      "id": "59ed83b6-85c4-4371-a744-fe144b93bb2b",
       "comment": "",
       "command": "click",
       "target": "id=Incubation",
@@ -691,7 +643,7 @@
       ],
       "value": ""
     }, {
-      "id": "d65001da-5652-4b89-9257-b604643a682c",
+      "id": "faa1a307-ae9d-4b77-b2bc-965fbf50c9d2",
       "comment": "",
       "command": "type",
       "target": "id=Incubation",
@@ -702,9 +654,9 @@
         ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
         ["xpath=//div[5]/div/div/div/input", "xpath:position"]
       ],
-      "value": "7"
+      "value": "5"
     }, {
-      "id": "49f2950d-49f2-4e7d-aaa2-ac1d2510ec65",
+      "id": "e5ebfa40-f059-45b7-acd2-43cb54422662",
       "comment": "",
       "command": "click",
       "target": "name=RiskGroupTypeID",
@@ -717,34 +669,34 @@
       ],
       "value": ""
     }, {
-      "id": "4f36520a-75c2-411e-8d69-12f67e3b6215",
+      "id": "2850df94-9e72-475e-9230-0d8142ddafeb",
       "comment": "",
       "command": "select",
       "target": "name=RiskGroupTypeID",
       "targets": [],
-      "value": "label=ผู้สูงอายุ"
+      "value": "label=บุคคลทั่วไป"
     }, {
-      "id": "753cae40-9b28-486e-8154-f851a1fffb27",
+      "id": "e694e7e1-f9b6-4a1c-bf7b-857e375bb707",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
       "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
       ],
       "value": ""
     }, {
-      "id": "ef7a3a7c-d5a4-4797-98ed-c537b5c4e166",
+      "id": "5cfdf44b-a451-431f-b0b9-9b5f25ce4078",
       "comment": "",
       "command": "click",
       "target": "css=.MuiPickersDay-current .MuiTypography-root",
       "targets": [
         ["css=.MuiPickersDay-current .MuiTypography-root", "css:finder"],
-        ["xpath=//div[2]/div[4]/button/span/p", "xpath:position"],
-        ["xpath=//p[contains(.,'9')]", "xpath:innerText"]
+        ["xpath=//div[2]/div[6]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'11')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "68d6564d-ea14-4fd8-ad5c-ffdf702f8970",
+      "id": "c95b81a8-dd92-4dbb-b6ae-82801358767b",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
@@ -755,30 +707,31 @@
       ],
       "value": ""
     }, {
-      "id": "0e6c69f2-82b2-4fcb-8e38-bbae04ba488f",
+      "id": "b2742dab-628f-401f-9897-a2b9fbb32571",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "target": "css=.MuiButton-containedPrimary",
       "targets": [
-        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
-        ["xpath=//div[8]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b52bf3f7-5956-438d-999a-0ae7880d186e",
+      "id": "be2dd7c4-da99-46aa-aea2-a39de747547f",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiAlert-root",
+      "target": "css=.MuiAlert-message",
       "targets": [
-        ["css=.MuiAlert-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div", "xpath:position"]
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "71365aad-87e6-4109-bd19-9e97b5925908",
+      "id": "a79427fc-1eb3-42f6-823d-10d80ba01a04",
       "comment": "",
       "command": "assertText",
       "target": "css=.MuiAlert-message",
@@ -790,299 +743,35 @@
       "value": "บันทึกข้อมูลไม่สำเร็จ: Symptom must be more than 10"
     }]
   }, {
-    "id": "48be4d8e-1498-4411-b5f4-d5c361b348d1",
-    "name": "B6132200 - ตรวจสอบวันที่ Date ต้องไม่เป็นอนาคต",
-    "commands": [{
-      "id": "37bf28ad-f00a-4983-aa80-11d6306b25ed",
-      "comment": "",
-      "command": "open",
-      "target": "http://localhost:3000/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "40e43fa3-4218-45b4-8d5e-1a5d338ec230",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1366x728",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f81b97b7-76a9-4c51-bf7f-0b3fadb2fbdb",
-      "comment": "",
-      "command": "click",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiSvgIcon-root",
-      "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiSvgIcon-root", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "f7af0c94-9730-4207-98d3-23ab19fb4a98",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-contained > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
-        ["xpath=//a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "0781acca-647d-42a7-8513-b62193d5d6e1",
-      "comment": "",
-      "command": "click",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "fb1698aa-673d-4e1f-9e4b-d56195bbb702",
-      "comment": "",
-      "command": "type",
-      "target": "id=Name",
-      "targets": [
-        ["id=Name", "id"],
-        ["css=#Name", "css:finder"],
-        ["xpath=//input[@id='Name']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "ไข้เลือดออก"
-    }, {
-      "id": "c27475af-2691-4b67-b6a2-0f530f6f6435",
-      "comment": "",
-      "command": "click",
-      "target": "name=GermID",
-      "targets": [
-        ["name=GermID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='GermID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "39a5d60e-0dfc-4b00-9332-ae07cc6dc85c",
-      "comment": "",
-      "command": "select",
-      "target": "name=GermID",
-      "targets": [],
-      "value": "label=เดงกี"
-    }, {
-      "id": "a80d258c-b794-4fa2-8cd7-1aa8a1ed97e2",
-      "comment": "",
-      "command": "click",
-      "target": "name=CatchingTypeID",
-      "targets": [
-        ["name=CatchingTypeID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='CatchingTypeID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "747f6781-c023-4b36-8119-5b0090079086",
-      "comment": "",
-      "command": "select",
-      "target": "name=CatchingTypeID",
-      "targets": [],
-      "value": "label=ติดต่อจากสัตว์สู่คน"
-    }, {
-      "id": "ddcfb79d-18a5-4fa4-abae-5da37d41da1f",
-      "comment": "",
-      "command": "click",
-      "target": "id=Symptom",
-      "targets": [
-        ["id=Symptom", "id"],
-        ["css=#Symptom", "css:finder"],
-        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "c02d2ade-c507-48aa-89d8-d0c2fce3fa29",
-      "comment": "",
-      "command": "type",
-      "target": "id=Symptom",
-      "targets": [
-        ["id=Symptom", "id"],
-        ["css=#Symptom", "css:finder"],
-        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
-      ],
-      "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
-    }, {
-      "id": "e5034c89-dee7-49f4-8a63-32e674145940",
-      "comment": "",
-      "command": "click",
-      "target": "id=Incubation",
-      "targets": [
-        ["id=Incubation", "id"],
-        ["css=#Incubation", "css:finder"],
-        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "ce4c8f6f-8f47-46fc-b57e-9f8014531ddf",
-      "comment": "",
-      "command": "type",
-      "target": "id=Incubation",
-      "targets": [
-        ["id=Incubation", "id"],
-        ["css=#Incubation", "css:finder"],
-        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
-      ],
-      "value": "9"
-    }, {
-      "id": "57b55506-ccdc-4911-87c9-daa8661b6967",
-      "comment": "",
-      "command": "click",
-      "target": "name=RiskGroupTypeID",
-      "targets": [
-        ["name=RiskGroupTypeID", "name"],
-        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
-        ["xpath=//select[@name='RiskGroupTypeID']", "xpath:attributes"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[6]/div/div/select", "xpath:idRelative"],
-        ["xpath=//div[6]/div/div/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "235bbd79-0aee-4293-a2e3-7cc315ed5f42",
-      "comment": "",
-      "command": "select",
-      "target": "name=RiskGroupTypeID",
-      "targets": [],
-      "value": "label=บุคคลทั่วไป"
-    }, {
-      "id": "1abd1a61-4c2f-4c30-b496-88dab2ba0037",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
-      "targets": [
-        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "acfc43d6-60d2-40c5-adcb-d16c708092cf",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiTypography-subtitle1",
-      "targets": [
-        ["css=.MuiTypography-subtitle1", "css:finder"],
-        ["xpath=//span/h6", "xpath:position"],
-        ["xpath=//h6[contains(.,'2022')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "a678989a-c525-47b3-9778-c3a09e09c0bf",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiTypography-root:nth-child(124)",
-      "targets": [
-        ["css=.MuiTypography-root:nth-child(124)", "css:finder"],
-        ["xpath=//div[124]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "24c6b5d2-6a69-4396-ae21-66cc2138b1c8",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
-        ["xpath=//div[2]/button[2]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ea4ddd89-4942-4655-9a44-0873055520a6",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
-        ["xpath=//div[8]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4fe50285-c6b9-4745-bccb-49c0d021cc91",
-      "comment": "",
-      "command": "click",
-      "target": "css=.MuiAlert-root",
-      "targets": [
-        ["css=.MuiAlert-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2f7c4d2b-128f-458d-83e2-dd11506dfdb7",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.MuiAlert-message",
-      "targets": [
-        ["css=.MuiAlert-message", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
-        ["xpath=//div/div/div[2]", "xpath:position"]
-      ],
-      "value": "บันทึกข้อมูลไม่สำเร็จ: Date cannot be in the future"
-    }]
-  }, {
-    "id": "a0b4834f-0f42-4802-ae82-dd02c5523839",
+    "id": "07a6f8ed-be89-4f71-83aa-efd4b188dcfb",
     "name": "B6132200 - ตรวจสอบระยะฟักตัว Incubation ต้องอยู่ระหว่าง 1-90",
     "commands": [{
-      "id": "bca9e463-70af-49fe-8bac-86d820b0f70a",
+      "id": "f7d921da-eb66-40f6-adc8-93441f1668ef",
       "comment": "",
       "command": "open",
       "target": "http://localhost:3000/",
       "targets": [],
       "value": ""
     }, {
-      "id": "12e513f5-f70b-46b6-bbe6-8e4ecee4358e",
+      "id": "f2352237-4000-40c3-bf56-44645975d39e",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1366x728",
+      "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
-      "id": "fb5f039a-625e-47d3-b176-6842d80bc792",
+      "id": "a637f867-a281-4ce4-ad88-3845fe30fd70",
       "comment": "",
       "command": "click",
-      "target": "css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root",
+      "target": "css=.makeStyles-a-12:nth-child(6) .MuiListItemIcon-root",
       "targets": [
-        ["css=.makeStyles-a-12:nth-child(2) .MuiListItemIcon-root", "css:finder"],
-        ["xpath=//div[@id='root']/div/div/div/ul/a[2]/div/div", "xpath:idRelative"],
-        ["xpath=//a[2]/div/div", "xpath:position"]
+        ["css=.makeStyles-a-12:nth-child(6) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[6]/div/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div/div", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "44308c2b-bd47-4392-989d-4683196d412f",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.MuiButton-contained > .MuiButton-label",
-      "targets": [
-        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
-        ["xpath=//a/span", "xpath:position"],
-        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d92bb45b-d60a-45c4-85a7-a6f705be66f0",
+      "id": "4d74c631-d3c3-4e44-b13d-8038ae2dcb96",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-contained > .MuiButton-label",
@@ -1094,7 +783,7 @@
       ],
       "value": ""
     }, {
-      "id": "71416579-ff15-41f4-aa35-75631b2ab23a",
+      "id": "c152a642-5fe0-4a41-a385-3e7cd6e4ef34",
       "comment": "",
       "command": "click",
       "target": "id=Name",
@@ -1107,7 +796,7 @@
       ],
       "value": ""
     }, {
-      "id": "bb9f12ca-6db0-4e1c-a81b-346d045f70b5",
+      "id": "3924a12f-e1ba-4faf-aaf6-2b4c955aef37",
       "comment": "",
       "command": "type",
       "target": "id=Name",
@@ -1120,7 +809,7 @@
       ],
       "value": "ไข้เลือดออก"
     }, {
-      "id": "7de0f119-a88a-4ea2-9b59-1bc03766a8ee",
+      "id": "4981a5dd-f472-44ae-baea-9d95db906a81",
       "comment": "",
       "command": "click",
       "target": "name=GermID",
@@ -1133,14 +822,14 @@
       ],
       "value": ""
     }, {
-      "id": "5a802458-5b76-4801-bdd4-9f74c9deef28",
+      "id": "d2f0c305-0843-4e7b-a72b-f8a360def729",
       "comment": "",
       "command": "select",
       "target": "name=GermID",
       "targets": [],
       "value": "label=เดงกี"
     }, {
-      "id": "df7b09c0-451e-4380-86a2-875010737751",
+      "id": "4ad77d69-7f6b-4458-ad9d-a31b15af5a57",
       "comment": "",
       "command": "click",
       "target": "name=CatchingTypeID",
@@ -1153,14 +842,14 @@
       ],
       "value": ""
     }, {
-      "id": "bce382ea-f226-4d15-a0ec-2dd34caf186c",
+      "id": "bd97bce2-0284-46ce-8809-5ee17ec37dfb",
       "comment": "",
       "command": "select",
       "target": "name=CatchingTypeID",
       "targets": [],
       "value": "label=ติดต่อจากสัตว์สู่คน"
     }, {
-      "id": "b7c8e00f-66da-452f-8159-1505209f3b86",
+      "id": "537ff4a7-c818-4116-b48b-4add06f26976",
       "comment": "",
       "command": "click",
       "target": "id=Symptom",
@@ -1173,7 +862,7 @@
       ],
       "value": ""
     }, {
-      "id": "40f23eba-d1c8-45a6-9e35-788ac1208ef2",
+      "id": "ed23e8cd-d567-47f1-bf84-31d8dd0c8178",
       "comment": "",
       "command": "type",
       "target": "id=Symptom",
@@ -1186,7 +875,7 @@
       ],
       "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
     }, {
-      "id": "a9ffc4bb-f1e9-44ac-bdbe-36728cc2da1f",
+      "id": "f1fc1175-c607-43cc-b8e7-db5519112537",
       "comment": "",
       "command": "click",
       "target": "id=Incubation",
@@ -1199,7 +888,7 @@
       ],
       "value": ""
     }, {
-      "id": "20ead8fe-1fc0-47d3-a428-9e6d079e63d1",
+      "id": "6d272249-2323-4fac-a315-b3f46396f8e0",
       "comment": "",
       "command": "type",
       "target": "id=Incubation",
@@ -1212,7 +901,7 @@
       ],
       "value": "99"
     }, {
-      "id": "20229c61-e32d-48a5-8d6d-812f9a409155",
+      "id": "b4593594-95dc-4e5f-a17c-0c44cde955db",
       "comment": "",
       "command": "click",
       "target": "name=RiskGroupTypeID",
@@ -1225,14 +914,14 @@
       ],
       "value": ""
     }, {
-      "id": "fff854fc-b4b1-4b4f-9535-f4b27e24ad57",
+      "id": "1ce85369-05b8-4404-bb5c-2b9701278548",
       "comment": "",
       "command": "select",
       "target": "name=RiskGroupTypeID",
       "targets": [],
       "value": "label=บุคคลทั่วไป"
     }, {
-      "id": "e855f257-960f-4cef-b4fb-6db6422512c0",
+      "id": "992f3d96-40a9-4bf0-9889-16d098a5403b",
       "comment": "",
       "command": "click",
       "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
@@ -1241,7 +930,7 @@
       ],
       "value": ""
     }, {
-      "id": "3c81b4ee-726d-46d9-81c8-b70ddca20d50",
+      "id": "f1214541-988e-40d4-829d-fb16729d6e2f",
       "comment": "",
       "command": "click",
       "target": "css=.MuiPickersDay-current .MuiTypography-root",
@@ -1252,7 +941,7 @@
       ],
       "value": ""
     }, {
-      "id": "1785368c-ccc7-42dd-b827-fa713d32a524",
+      "id": "21c660e2-1919-4657-bd0c-0aa7b79a6ca2",
       "comment": "",
       "command": "click",
       "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
@@ -1263,19 +952,20 @@
       ],
       "value": ""
     }, {
-      "id": "a6b5b9b3-1003-4671-803c-01c8088f36e7",
+      "id": "a4918d0b-6152-47d2-933f-f7b3be29b805",
       "comment": "",
       "command": "click",
-      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "target": "css=.MuiButton-containedPrimary",
       "targets": [
-        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
-        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
-        ["xpath=//div[8]/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "e40efa7a-0b8f-492b-b7dc-b680cf654740",
+      "id": "39f3459d-0a67-4a2b-81a0-5fb1730dfedc",
       "comment": "",
       "command": "click",
       "target": "css=.MuiAlert-root",
@@ -1286,7 +976,7 @@
       ],
       "value": ""
     }, {
-      "id": "45f684e7-1058-4ca0-ae56-b853500c9752",
+      "id": "4305350f-9136-4848-8c64-b49a1b77f83a",
       "comment": "",
       "command": "assertText",
       "target": "css=.MuiAlert-message",
@@ -1297,15 +987,299 @@
       ],
       "value": "บันทึกข้อมูลไม่สำเร็จ: Incubation must be between 1-90"
     }]
+  }, {
+    "id": "515b4f56-8300-440a-a21a-b373b978ed3b",
+    "name": "B6132200 - ตรวจสอบวันที่ Date ต้องไม่เป็นอนาคต",
+    "commands": [{
+      "id": "307c972e-7ada-4d55-b86b-800effa54a9a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "987e3574-297b-44d0-aa63-8c63b3c9dc74",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc0b6797-1f42-41c4-868b-17033d42dc12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(6) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(6) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec5d8f3d-8ef2-420d-8215-da4ade866eef",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e853fa-473f-45a6-aa42-3f5039b61acc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'เพิ่มโรคติดต่อ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aa46d18-4ed1-40c7-a0a9-8c3d359df24a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0b2cf5d-f482-425c-83e4-7051656477f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=Name",
+      "targets": [
+        ["id=Name", "id"],
+        ["css=#Name", "css:finder"],
+        ["xpath=//input[@id='Name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ไข้เลือดออก"
+    }, {
+      "id": "470079c3-0673-4e3e-b82b-b53f4f994340",
+      "comment": "",
+      "command": "click",
+      "target": "name=GermID",
+      "targets": [
+        ["name=GermID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='GermID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09edbca1-d892-4811-a1f1-46721202937e",
+      "comment": "",
+      "command": "select",
+      "target": "name=GermID",
+      "targets": [],
+      "value": "label=เดงกี"
+    }, {
+      "id": "d408c02e-94f5-4c40-83cf-881f6a000bcd",
+      "comment": "",
+      "command": "click",
+      "target": "name=CatchingTypeID",
+      "targets": [
+        ["name=CatchingTypeID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='CatchingTypeID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2b8d884-7033-47cc-b141-ea5500e0cb28",
+      "comment": "",
+      "command": "select",
+      "target": "name=CatchingTypeID",
+      "targets": [],
+      "value": "label=ติดต่อจากสัตว์สู่คน"
+    }, {
+      "id": "8235c114-60e1-4195-9caa-71483b5fd283",
+      "comment": "",
+      "command": "click",
+      "target": "id=Symptom",
+      "targets": [
+        ["id=Symptom", "id"],
+        ["css=#Symptom", "css:finder"],
+        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e4c6451-1c56-40dd-b969-34d95b8fe999",
+      "comment": "",
+      "command": "type",
+      "target": "id=Symptom",
+      "targets": [
+        ["id=Symptom", "id"],
+        ["css=#Symptom", "css:finder"],
+        ["xpath=//input[@id='Symptom']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "มีตุ่มแดงตามแขนขา ตัวร้อน เมื่อยเนื้อเมื่อยตัว"
+    }, {
+      "id": "12b48ecb-5398-475e-b488-9b8781180502",
+      "comment": "",
+      "command": "click",
+      "target": "id=Incubation",
+      "targets": [
+        ["id=Incubation", "id"],
+        ["css=#Incubation", "css:finder"],
+        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcc5fde9-a615-44a4-a7d4-635b561d14ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=Incubation",
+      "targets": [
+        ["id=Incubation", "id"],
+        ["css=#Incubation", "css:finder"],
+        ["xpath=//input[@id='Incubation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "2542a7fc-0320-425d-b828-62706c261014",
+      "comment": "",
+      "command": "click",
+      "target": "name=RiskGroupTypeID",
+      "targets": [
+        ["name=RiskGroupTypeID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RiskGroupTypeID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[6]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9345007f-97a5-4035-b412-a4604fcd0244",
+      "comment": "",
+      "command": "select",
+      "target": "name=RiskGroupTypeID",
+      "targets": [],
+      "value": "label=บุคคลทั่วไป"
+    }, {
+      "id": "bcdda0ff-2885-42eb-9092-b8d17056d201",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
+      "targets": [
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f225a5e4-4e20-4b71-af80-729e0e98835e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTypography-subtitle1",
+      "targets": [
+        ["css=.MuiTypography-subtitle1", "css:finder"],
+        ["xpath=//span/h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1dcf1d2-190d-4d45-bd60-24ce3c61a304",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTypography-root:nth-child(124)",
+      "targets": [
+        ["css=.MuiTypography-root:nth-child(124)", "css:finder"],
+        ["xpath=//div[124]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ba60427-9ad7-4342-9386-4d1c69ddadf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bb369ef-a823-4eb6-8880-9781da1f6d88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(4) > div:nth-child(5) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[4]/div[5]/button/span/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "306c9f1f-b8fd-4279-afcd-b7cf5f85f6ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6710d8df-f16b-4b59-9c70-2223b746dea0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary",
+      "targets": [
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7895720e-b386-40f9-8641-1f0115f98f63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccb27837-e668-4ffc-8107-a98a29c1e651",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Date cannot be in the future"
+    }]
   }],
   "suites": [{
-    "id": "bfda3a3c-b995-4d31-bc4e-616d815f7e81",
+    "id": "dbfea95d-3425-4e80-9083-983a006a6a71",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["http://localhost:3000/"],
+  "urls": ["http://localhost:3000/contagious", "http://localhost:3000/"],
   "plugins": []
 }

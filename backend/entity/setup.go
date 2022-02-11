@@ -405,7 +405,7 @@ func SetupDatabase() {
 		Symptom:       "มีไข้ ปวดหัว วิงเวียน คลื่นไส้อาเจียน ปวดรอบกระบอกตา ปวดตามกล้ามเนื้อ",
 		Incubation:    7,
 		RiskGroupType: RG3,
-		Date:          time.Now().AddDate(-10, -10, -10),
+		Date:          time.Now().AddDate(-5, -10, -10),
 	}
 	db.Model(&Contagious{}).Create(&C2)
 
@@ -416,7 +416,7 @@ func SetupDatabase() {
 		Symptom:       "มีไข้สูง รู้สึกไม่สบายตัว หนาวสั่น ปวดศีรษะ อ่อนเพลียอย่างรุนแรง ปวดหลังอย่างรุนแรง อาเจียน",
 		Incubation:    12,
 		RiskGroupType: RG3,
-		Date:          time.Now().AddDate(-10, -10, -5),
+		Date:          time.Now().AddDate(-2, -10, -5),
 	}
 	db.Model(&Contagious{}).Create(&C3)
 }

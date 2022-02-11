@@ -113,6 +113,25 @@ func main() {
 			protected.POST("/contagious", controller.CreateContagious)
 			protected.PATCH("/contagious", controller.UpdateContagious)
 			protected.DELETE("/contagious/:id", controller.DeleteContagious)
+
+			//PatientRoom
+			protected.GET("/rooms",controller.ListRooms)
+			protected.GET("/rooms/:id",controller.GetRoom)
+			protected.POST("/rooms",controller.CreateRoom)
+			protected.PATCH("/rooms", controller.UpdateRoom)
+			protected.DELETE("/rooms/:id", controller.DeleteRoom)
+			//Symptom
+			protected.GET("/symptoms",controller.ListSymptoms)
+			protected.GET("/symptom/:id",controller.GetSymptom)
+			protected.POST("/symptoms",controller.CreateSymptom)
+			protected.PATCH("/symptoms", controller.UpdateSymptom)
+			protected.DELETE("/symptoms/:id", controller.DeleteSymptom)
+			//Screening
+			protected.GET("/screenings",controller.ListScreening)
+			protected.GET("/screening/:id",controller.GetScreening)
+			protected.POST("/screenings",controller.CreateScreening)
+			protected.PATCH("/screenings", controller.UpdateScreening)
+			protected.DELETE("/screenings/:id", controller.DeleteScreening)
 		}
 	}
 	// User Routes

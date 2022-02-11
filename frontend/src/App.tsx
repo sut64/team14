@@ -23,7 +23,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Button from "@material-ui/core/Button";
 
-
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import HomeIcon from "@material-ui/icons/Home";
 //import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 import FaceIcon from '@material-ui/icons/Face';
@@ -132,8 +132,10 @@ export default function MiniDrawer() {
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <StorageIcon />, path: "/medicineand_vaccines" },
-{ name: "ผู้ป่วย", icon: <YouTubeIcon />, path: "/screening" },  ];
+    { name: "ผู้ป่วย", icon: <AccountCircleIcon />, path: "/screenings" },  
 
+    ];
+    
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -230,7 +232,8 @@ export default function MiniDrawer() {
               <Route exact path="/room_data_lists" component={RoomDataList} />
               <Route exact path="/room_data_list/create" component={RoomDataListCreate} />
               <Route exact path="/medicineand_vaccines" component={MedicineandVaccine} />
-              <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} /><Route exact path="/screening" component={Screening} />
+              <Route exact path="/medicineand_vaccine/create" component={MedicineandVaccineCreate} />
+	      <Route exact path="/screenings" component={Screening} />
               <Route exact path="/screening/create" component={ScreeningCreate} />
 	   </Switch>
           </div>

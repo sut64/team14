@@ -71,7 +71,7 @@ func TestContagiousSymptomMore10(t *testing.T) {
 }
 
 // ทดสอบระยะฟักตัวเป็นเลขที่ไม่ได้อยู่ระหว่าง 1 - 90 ต้องเจอ error
-func TestContagiousIncubationNotMinus(t *testing.T) {
+func TestContagiousIncubationMustBeBetween1to90(t *testing.T) {
 	g := NewGomegaWithT(t)
 
 	fixtures := []int{

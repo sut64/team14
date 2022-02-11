@@ -90,19 +90,25 @@ function Screening() {
                 <TableCell align="center" width="5%">
                   ลำดับ
                 </TableCell>
-                <TableCell align="center" width="15%">
+                <TableCell align="center" width="5%">
                   ชื่อ
                 </TableCell>
-                <TableCell align="center" width="15%">
+                <TableCell align="center" width="10%">
                   อาการ
                 </TableCell>
-                <TableCell align="center" width="25%">
+                <TableCell align="center" width="15%">
                   จำนวนวันที่ป่วย
                 </TableCell>
-                <TableCell align="center" width="10%">
+                <TableCell align="center" width="15%">
                   ห้องพัก
                 </TableCell>
-                <TableCell align="center" width="30%">
+                <TableCell align="center" width="10%">
+                  ความดัน
+                </TableCell>
+                <TableCell align="center" width="20%">
+                  โรคประจำตัว
+                </TableCell>
+                <TableCell align="center" width="20%">
                   วันที่และเวลา
                 </TableCell>
               </TableRow>
@@ -115,6 +121,8 @@ function Screening() {
                   <TableCell align="center">{item.Symptom.State}</TableCell>
                   <TableCell align="center">{item.Symptom.Period}</TableCell>
                   <TableCell align="center">{item.Room.RoomNumber}</TableCell>
+                  <TableCell align="center">{item.BloodPressure}</TableCell>
+                  <TableCell align="center">{item.CongenitalDisease}</TableCell>
                   <TableCell align="center">{format((new Date(item.Time)), 'dd MMMM yyyy hh:mm a')}</TableCell>
                 </TableRow>
               ))}

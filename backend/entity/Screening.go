@@ -2,7 +2,7 @@ package entity
 
 import (
 	"time"
-
+	"github.com/asaskevich/govalidator"
 	"gorm.io/gorm"
 )
 

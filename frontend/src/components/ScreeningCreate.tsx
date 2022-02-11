@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 function ScreeningCreate() {
   const classes = useStyles();
-  const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
+  const [time, setTime] = useState<Date | null>(new Date());
   const [officers, setOfficer] = useState<OfficersInterface[]>([]);
 
 const [patient, setPatient] = useState<PatientsInterface[]>([]);
@@ -64,6 +64,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
   );
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [errormassage, setErrorMassage] = useState("");
 
   const apiUrl = "http://localhost:8080";
   const requestOptions = {
@@ -92,18 +93,12 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
     });
   };
 
-  const handleInputChange = (
-    event: React.ChangeEvent<{ id?: string; value: any }>
-  ) => {
-    const id = event.target.id as keyof typeof screening;
-    const { value } = event.target;
-    setScreening({ ...screening, [id]: value });
+  const handleTimeChange = (date: Date | null) => {
+    console.log(date);
+    setTime(date);
   };
  
-  const handleDateChange = (date: Date | null) => {
-    console.log(date);
-    setSelectedDate(date);
-  };
+  
 
   const getOfficer = async () => {
     let uid = localStorage.getItem("uid")
@@ -121,7 +116,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
 
 
   const getRoom = async () => {
-    fetch(`${apiUrl}/room_details`, requestOptions)
+    fetch(`${apiUrl}/rooms`, requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res.data) {
@@ -167,17 +162,19 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
     let val = typeof data === "string" ? parseInt(data) : data;
     return val;
   };
- //console.log(data)
+ 
   function submit() {
     let data = {
       OfficerID: convertType(screening.OfficerID),
       PatientID: convertType(screening.PatientID),
       RoomID: convertType(screening.RoomID),
       SymptomID: convertType(screening.SymptomID),
-      Time: selectedDate,
+      Time: time,
+      BloodPressure:  convertType(screening.BloodPressure),
+      CongenitalDisease:  screening.CongenitalDisease
     }; 
     console.log(data)
-    //const apiUrl = "http://localhost:8080/screening";
+    
     const requestOptionsPost = {
       method: "POST",
       headers: {
@@ -191,51 +188,13 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
           .then((res) => {
             if (res.data) {
               setSuccess(true);
+	      serErrorMassage("");
             } else {
               setError(true);
+	      setErrorMassage(res.error);
             }
           });
-    /*const apiUrl = "http://localhost:8080/screening";
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    };
-
-    fetch(apiUrl, requestOptions)
-      .then((response) => response.json())
-      .then((res) => {
-        if (res.data) {
-          setSuccess(true);
-        } else {
-          setError(true);
-        }
-      });*/
- }
-
- /*const requestOptionsPost = {
-  method: "POST",
-  headers: {
-    Authorization: `Bearer ${localStorage.getItem("token")}`,
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(data),
-};
-    fetch(`${apiUrl}/screening`, requestOptionsPost)
-      .then((response) => response.json())
-      .then((res) => {
-        if (res.data) {
-          console.log("บันทึกได้")
-          setSuccess(true);
-        } else {
-          console.log("บันทึกไม่ได้")
-          setError(true);
-        }
-      });
-  }*/
+    
 
   return (
     <Container className={classes.container} maxWidth="md">
@@ -246,7 +205,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
       </Snackbar>
       <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="error">
-          บันทึกข้อมูลไม่สำเร็จ
+          บันทึกข้อมูลไม่สำเร็จ: {errormassage}
         </Alert>
       </Snackbar>
       <Paper className={classes.paper}>
@@ -330,14 +289,42 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
               </Select>
             </FormControl>
           </Grid>
+	  <Grid item xs={6}>
+            <FormControl fullWidth variant="outlined">
+              <p>ความดัน</p>
+              <TextField
+                name="BloodPressure"
+                variant="outlined"
+                type="string"
+                size="medium"
+                placeholder="โปรดใส่ความดันเลือด"
+                value={screening.BloodPressure}
+                onChange={handleChange}
+              />
+            </FormControl>
+          </Grid>
+          <Grid item xs={6}>
+            <FormControl fullWidth variant="outlined">
+              <p>โรคประจำตัว</p>
+              <TextField
+                name="CongenitalDisease"
+                variant="outlined"
+                type="string"
+                size="medium"
+                placeholder="โปรดระบุโรคประจำตัว"
+                value={screening.CongenitalDisease}
+                onChange={handleChange}
+              />
+            </FormControl>
+          </Grid>
           <Grid item xs={6}>
             <FormControl fullWidth variant="outlined">
               <p>วันที่และเวลา</p>
               <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <KeyboardDateTimePicker
                   name="Time"
-                  value={selectedDate}
-                  onChange={handleDateChange}
+                  value={time}
+                  onChange={handleTimeChange}
                   label="กรุณาเลือกวันที่และเวลา"
                   minDate={new Date("2018-01-01T00:00")}
                   format="yyyy/MM/dd hh:mm a"
@@ -348,7 +335,7 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
           <Grid item xs={12}>
             <Button
               component={RouterLink}
-              to="/screening"
+              to="/screenings"
               variant="contained"
             >
               กลับ

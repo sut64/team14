@@ -8,7 +8,7 @@ import (
 	"github.com/onsi/gomega"
 )
 
-func TestAllpass(t *testing.T) {
+func TestScreeningpass(t *testing.T) {
 	g := gomega.NewGomegaWithT(t)
 
 	screening := Screening{

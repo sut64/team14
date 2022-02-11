@@ -4,6 +4,7 @@ package controller
 import (
 		//"time"
 
+	"github.com/asaskevich/govalidator"
         "github.com/sut64/team14/entity"
 
         "github.com/gin-gonic/gin"
@@ -62,6 +63,18 @@ func CreateScreening(c *gin.Context) {
 		Patient: 		name,               // โยงความสัมพันธ์กับ Entity name
 		Officer: 		officers,
 
+		BloodPressure: 			screening.BloodPressure,
+		CongenitalDisease: screening.CongenitalDisease,
+	}
+
+	if _, err := govalidator.ValidateStruct(screening); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	if value := govalidator.IsPositive(float64(float64(screening.BloodPressure))); !value {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "BloodPressure must more then 0"})
+		return
 	}
 
 	// 16: บันทึก
@@ -105,7 +118,7 @@ func ListScreening(c *gin.Context) {
 /*func GetScreening(c *gin.Context) {
 
 	var screening []entity.Screening
-	if err := entity.DB().Preload("Patient").Preload("Room").Preload("Symptom")/*.Preload("User").Raw("SELECT * FROM screenings").Find(&screening).Error; err != nil {
+	if err := entity.DB().Preload("Patent").Preload("Room").Preload("Symptom")/*.Preload("User").Raw("SELECT * FROM screenings").Find(&screening).Error; err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}

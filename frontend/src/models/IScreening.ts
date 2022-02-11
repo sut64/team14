@@ -14,4 +14,6 @@ export interface ScreeningInterface{
     Room: RoomInterface,
     OfficerID: number,
     Officer: OfficersInterface,
+    BloodPressure: number,
+    CongenitalDisease: string,
 }

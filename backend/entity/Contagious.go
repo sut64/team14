@@ -3,8 +3,8 @@ package entity
 import (
 	"time"
 
-	"gorm.io/gorm"
 	"github.com/asaskevich/govalidator"
+	"gorm.io/gorm"
 )
 
 type Contagious struct {
@@ -23,7 +23,7 @@ type Contagious struct {
 	RiskGroupTypeID *uint
 	RiskGroupType   RiskGroupType `gorm:"references:id" valid:"-"`
 
-//	Prevention         []Prevention         `gorm:"foreignKey:ContagiousID"`
+	Prevention         []Prevention         `gorm:"foreignKey:ContagiousID"`
 	MedicineandVaccine []MedicineandVaccine `gorm:"foreignKey:ContagiousID"`
 }
 
@@ -35,4 +35,3 @@ func init() {
 		return t.Before(now) || t.Equal(now)
 	})
 }
-

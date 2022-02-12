@@ -44,6 +44,8 @@ import Contagious from "./components/Contagious";
 import ContagiousCreate from "./components/ContagiousCreate";
 import ScreeningCreate from "./components/ScreeningCreate";
 import Screening from "./components/Screening";
+import Prevention from "./components/Prevention";
+import PreventionCreate from "./components/PreventionCreate";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -134,13 +136,14 @@ export default function MiniDrawer() {
   const menu = [
     { name: "Home", icon: <HomeIcon />, path: "/" },
     { name: "Officer", icon: <FaceIcon />, path: "/officers" },
+    /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
+    { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
     { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
     { name: "Contagious", icon: <EmojiNatureIcon />, path: "/contagious" },
     { name: "Patient", icon: <AccountCircleIcon />, path: "/screenings" },
-    /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
-    { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
+    { name: "Prevention", icon: <UnarchiveIcon />, path: "/prevention" },
   ];
 
   useEffect(() => {
@@ -246,6 +249,8 @@ export default function MiniDrawer() {
               <Route exact path="/contagious/create" component={ContagiousCreate} />
 	      <Route exact path="/screenings" component={Screening} />
               <Route exact path="/screening/create" component={ScreeningCreate} />
+              <Route exact path="/prevention" component={Prevention} />
+              <Route exact path="/prevention/create" component={PreventionCreate} />
 	   </Switch>
           </div>
         </main>

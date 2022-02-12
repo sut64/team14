@@ -134,13 +134,13 @@ export default function MiniDrawer() {
   const menu = [
     { name: "Home", icon: <HomeIcon />, path: "/" },
     { name: "Officer", icon: <FaceIcon />, path: "/officers" },
-    /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
-    { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <UnarchiveIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
     { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
     { name: "Contagious", icon: <EmojiNatureIcon />, path: "/contagious" },
     { name: "Patient", icon: <AccountCircleIcon />, path: "/screenings" },
+    /*{ name: "Patient", icon: <FaceIcon />, path: "/patients" },
+    { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
   ];
 
   useEffect(() => {

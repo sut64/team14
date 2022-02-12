@@ -1,0 +1,1383 @@
+{
+  "id": "08d01383-3122-4135-a769-61643346efa3",
+  "version": "2.0",
+  "name": "B5814619",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "84f85dea-8aa6-4a7a-9229-3b8900f83e9d",
+    "name": "B5814619-บันทึกสำเร็จ",
+    "commands": [{
+      "id": "ef480f58-7d6f-429f-a1bd-7e51bc68f782",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07052bcd-3b54-46af-868f-ddfd7343b9aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f57fb747-da50-4a1e-bcf5-e891f38adf78",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073e45cd-271d-46ef-a643-6e79116e12a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa2227f7-cb6e-4e55-b873-cc65d4676ee3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce198d6d-0739-4a4d-a8da-0a773b9a7a73",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cfb040f-dea4-4fed-ad5d-238ddec879dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5aed66f-6a9a-40a5-9ed1-2e2202a2f104",
+      "comment": "",
+      "command": "click",
+      "target": "name=OfficerID",
+      "targets": [
+        ["name=OfficerID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='OfficerID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4bf1541-7013-48b5-8786-0ab05370bf6b",
+      "comment": "",
+      "command": "select",
+      "target": "name=OfficerID",
+      "targets": [],
+      "value": "label=Wittaya"
+    }, {
+      "id": "516bbc95-4531-48d6-aec6-cfca8d57bf12",
+      "comment": "",
+      "command": "click",
+      "target": "name=ContagiousID",
+      "targets": [
+        ["name=ContagiousID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='ContagiousID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ed2c52-749c-40df-b8ac-84b7094f7f66",
+      "comment": "",
+      "command": "select",
+      "target": "name=ContagiousID",
+      "targets": [],
+      "value": "label=ไข้ลาสซา"
+    }, {
+      "id": "52ce9304-d323-49ea-998a-659574041014",
+      "comment": "",
+      "command": "click",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a432849-17a8-4d18-84dc-0b21cba411bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "เป็นชนิดของไข้เลือดออกจากไวรัสที่เกิดจากไวรัสลาสซา"
+    }, {
+      "id": "2368ac29-c129-4968-99ae-fa23e7e10a0d",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a54cce30-864b-4206-8d24-372639dd2702",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอฮง"
+    }, {
+      "id": "a7be3c3c-928d-4698-bc83-3c98a56bc525",
+      "comment": "",
+      "command": "click",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de724e44-096c-4d3f-b6d5-8c1a2dd5fe35",
+      "comment": "",
+      "command": "type",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ใช้การแยกผู้ติดเชื้อและลดการสัมผัสกับหนู"
+    }, {
+      "id": "2bfe0eb5-06de-40cc-aed0-594e914e1ef7",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc6ef09-e721-4994-9120-b06d856d4fdd",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "3827a06a-eb3e-4791-a093-dd7699ecca0c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b00036c1-1e0c-412a-a8b6-e52964f5d42f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a67dd824-dd65-40a9-b16a-e8fa5caa88cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary",
+      "targets": [
+        ["css=.MuiButton-containedPrimary", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20f9bb5-2f87-4eb0-a7de-43fc13ce63ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e28ccf2-0751-4de8-b674-62f08bbe4786",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลสำเร็จ"
+    }]
+  }, {
+    "id": "ffd1cbb4-4f04-4411-9c1b-8ab3e06fa17b",
+    "name": "B5814619-ตรวจสอบDiseaseต้องไม่เว้นว่าง",
+    "commands": [{
+      "id": "a8072471-9f7b-4fd6-b1a3-0fe5140da887",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cbcb552-4f9a-4880-aa64-ac1b45255df6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edfda5dd-b62f-4c25-9d07-5c1bb52c42f9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3882336-32b4-4426-9d06-54601bc9844e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1219f208-1927-42ba-a648-3e16c8c9ac40",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9716140d-ba74-47de-aeae-4ab3cd91c9a1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "681c1410-076f-49c7-82a1-3652abf77f9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a26d950-c54c-42be-9c7d-e104dc412244",
+      "comment": "",
+      "command": "click",
+      "target": "name=OfficerID",
+      "targets": [
+        ["name=OfficerID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='OfficerID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "815b30d1-e8b1-4654-bf1e-e52a4622c35e",
+      "comment": "",
+      "command": "select",
+      "target": "name=OfficerID",
+      "targets": [],
+      "value": "label=Jirawan"
+    }, {
+      "id": "80f1da17-fda1-4520-8b82-d5cf12829b0e",
+      "comment": "",
+      "command": "click",
+      "target": "name=ContagiousID",
+      "targets": [
+        ["name=ContagiousID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='ContagiousID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b6efea4-2c7b-4513-87d9-75f084207d34",
+      "comment": "",
+      "command": "select",
+      "target": "name=ContagiousID",
+      "targets": [],
+      "value": "label=ไข้ลาสซา"
+    }, {
+      "id": "5c058fe3-51e9-42c8-98b6-ed0cbc07d23f",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "264a64ab-81c1-45ee-97c8-582b0a465cbd",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอยู"
+    }, {
+      "id": "4340a987-6ffe-4eab-927b-3c11d0bf61ef",
+      "comment": "",
+      "command": "click",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fedcb46-1eff-49f5-bf11-4cfe8aee2249",
+      "comment": "",
+      "command": "type",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ใช้การแยกผู้ติดเชื้อและลดการสัมผัสกับหนู"
+    }, {
+      "id": "cd710e57-81ed-46b9-bf3c-4a339df168cd",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2284715-451c-413f-a580-a30c13488299",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "e01a29b3-471f-460a-bb83-e0f9bd7b86b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "373341d3-3126-46bb-a938-143ddb3fc838",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3819b730-730b-4ba6-b02c-9ba73aab2a81",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Disease cannot be blank"
+    }]
+  }, {
+    "id": "a5be3bac-7ea2-4c7f-a54c-23d770d70c00",
+    "name": "B5814619-ตรวจสอบProtectionไม่น้อยกว่า5ตัวอักษร",
+    "commands": [{
+      "id": "a20f345f-4991-42db-8469-b933c614a759",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c94d242-7395-49d5-a26a-23657a89d5ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x718",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c48387b7-a4a7-4e1a-8071-83b770663f8f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf99e1c-7391-4e89-a54a-18b6409b89eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f81034c9-ad78-499e-b2fc-4b7820b73d1c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) .MuiListItemIcon-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/ul/a[8]/div/div", "xpath:idRelative"],
+        ["xpath=//a[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef32c4f-6bac-4992-84f7-3fb08d707a72",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1863c90-de23-45b9-89b7-b49d58a7ccb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b80483a-704c-4265-8d41-08421eed0cff",
+      "comment": "",
+      "command": "click",
+      "target": "name=OfficerID",
+      "targets": [
+        ["name=OfficerID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='OfficerID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46ba1f84-e35c-406e-aa25-056863cb92f2",
+      "comment": "",
+      "command": "select",
+      "target": "name=OfficerID",
+      "targets": [],
+      "value": "label=Titan"
+    }, {
+      "id": "c57c0169-354e-4b1c-9a33-723d4b6c4df9",
+      "comment": "",
+      "command": "click",
+      "target": "name=ContagiousID",
+      "targets": [
+        ["name=ContagiousID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='ContagiousID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62dcc1a5-b7ff-4e18-bedc-ed0b856fd828",
+      "comment": "",
+      "command": "select",
+      "target": "name=ContagiousID",
+      "targets": [],
+      "value": "label=ไข้ลาสซา"
+    }, {
+      "id": "0ca890f2-7504-4b80-baf2-fa4b31711126",
+      "comment": "",
+      "command": "click",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e870a39-45bb-4171-8cf8-6c4cf8197405",
+      "comment": "",
+      "command": "type",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "เป็นชนิดของไข้เลือดออกจากไวรัสที่เกิดจากไวรัสลาสซา"
+    }, {
+      "id": "60a75302-3fb6-46a3-8c7d-524b5cf260c3",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4d81444-164d-49b3-a9ed-326ed8672d91",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอยู"
+    }, {
+      "id": "b7f5a07e-1a28-457a-ab83-0c191f0e3a8c",
+      "comment": "",
+      "command": "click",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c965c54-e299-450c-a057-30a43d467240",
+      "comment": "",
+      "command": "type",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ใช้"
+    }, {
+      "id": "f9a208e9-e76f-480f-a902-bb13ec6f1f99",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b839b355-6f31-4453-aabd-f922586d7639",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "01c11773-5b4f-4f8f-8aec-45d524671ca4",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "229846f6-e4fe-447b-9eb0-304b170f5195",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "141b7d48-c720-4ced-a126-8c674c0c00e4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14f7cc02-c091-4578-b7e7-53aed6f4729f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc5efc5c-082b-4619-85e0-4d0849cafe59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div[2]/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "540b972b-0eb6-4426-951f-5af2c363b893",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "454e0054-bf90-4b7c-82b9-535ac622fa8b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Protection must be more than 5"
+    }]
+  }, {
+    "id": "18d16ad6-d126-4986-81da-abdd0a681ced",
+    "name": "B5814619-ตรวจสอบAgeไม่ติดลบ",
+    "commands": [{
+      "id": "2fadcb0a-5758-4741-bd91-095e306ca6cf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1558a7c-98a1-42fb-90df-363fb7832981",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4f6f79f-77f8-4aea-93bd-b9f79062b13f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "be7f152e-3a91-405a-ae0e-da08b4e2d460",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0afd93b9-2461-4b2f-9c4b-917234e00de8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d505a1e5-d695-457e-a132-f0ef26141205",
+      "comment": "",
+      "command": "click",
+      "target": "name=OfficerID",
+      "targets": [
+        ["name=OfficerID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='OfficerID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ee2a93a-b73d-4dc1-ad8b-270cdaddef2a",
+      "comment": "",
+      "command": "select",
+      "target": "name=OfficerID",
+      "targets": [],
+      "value": "label=เจ้าหน้าที่เอ"
+    }, {
+      "id": "e4f588ea-a569-4270-b018-6c0cb52ec284",
+      "comment": "",
+      "command": "click",
+      "target": "name=ContagiousID",
+      "targets": [
+        ["name=ContagiousID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='ContagiousID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbb0db2-354f-4097-aa45-4b74b4340e17",
+      "comment": "",
+      "command": "select",
+      "target": "name=ContagiousID",
+      "targets": [],
+      "value": "label=ไข้ลาสซา"
+    }, {
+      "id": "75df93c9-240d-48ca-985a-9342c28381b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b585301-65bf-4bac-9746-7ed53bf50706",
+      "comment": "",
+      "command": "type",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "เป็นชนิดของไข้เลือดออกจากไวรัสที่เกิดจากไวรัสลาสซา"
+    }, {
+      "id": "be53d1c5-ae26-431b-bd3a-56c38bc70cf5",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb602da-5039-4a48-a97d-0f5e31461d8e",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอยู"
+    }, {
+      "id": "99f4f0ca-2a35-4c76-a99f-c24ca646fb05",
+      "comment": "",
+      "command": "click",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0dbf991-b1ba-47e8-a334-2fd30ff36166",
+      "comment": "",
+      "command": "type",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ใช้การแยกผู้ติดเชื้อและลดการสัมผัสกับหนู"
+    }, {
+      "id": "2243be01-e657-4059-a0a2-81028b8e47b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb55daa0-c0e4-46b4-b5db-9fad4ed3ea47",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d67376-17fe-4dc2-b0a0-16fd08bbaa27",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "-33"
+    }, {
+      "id": "711fb8bd-1880-4a57-8680-c4e23fff945a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "407f49e8-ff56-4120-9c4f-fb1a3f6cbf78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c94e4cd6-e2b7-4a13-988f-c8b204b30c79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1c1c9ff-95f7-46ae-a27d-e63e16367a71",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Age does not validate as positive"
+    }]
+  }, {
+    "id": "90524f70-ae72-4b7f-bd85-4faee740933c",
+    "name": "B5814619-ตรวจสอบDateไม่เป็นอนาคต",
+    "commands": [{
+      "id": "6a943f12-1b25-4fb0-b896-750f6970262b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4db8ec7-05e3-452c-963b-30e4075d4d39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e16a5d4e-6787-4889-83a5-4b69ed885005",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddaf1392-2c61-4b0d-bd19-5dee40aad4da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1797fd50-5c51-4ca4-a81d-40cb835da79f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.makeStyles-a-12:nth-child(8) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(8) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c65cdafb-bf09-437f-b68e-779baf739b07",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "089a0e08-5e25-43bb-8051-6e884d15a68a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3c163c-0f57-410b-a63a-b2bc9aba212e",
+      "comment": "",
+      "command": "click",
+      "target": "name=OfficerID",
+      "targets": [
+        ["name=OfficerID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='OfficerID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5abdcfff-b0df-40be-b7ff-99bc2d1a74fb",
+      "comment": "",
+      "command": "select",
+      "target": "name=OfficerID",
+      "targets": [],
+      "value": "label=เจ้าหน้าที่บี"
+    }, {
+      "id": "77163e0a-fb67-47fe-b77c-7ad96c2708b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=ContagiousID",
+      "targets": [
+        ["name=ContagiousID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='ContagiousID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d353ece-76dc-4cf2-adfb-95b7404f977d",
+      "comment": "",
+      "command": "select",
+      "target": "name=ContagiousID",
+      "targets": [],
+      "value": "label=ไข้ลาสซา"
+    }, {
+      "id": "6f5f3b01-beb2-49ea-8562-704e373fd370",
+      "comment": "",
+      "command": "click",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90214769-5508-40f2-8124-d65072bb7e99",
+      "comment": "",
+      "command": "type",
+      "target": "name=Disease",
+      "targets": [
+        ["name=Disease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Disease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "เป็นชนิดของไข้เลือดออกจากไวรัสที่เกิดจากไวรัสลาสซา"
+    }, {
+      "id": "715d246a-126f-448a-b413-93221fc6d907",
+      "comment": "",
+      "command": "click",
+      "target": "name=SpecialistID",
+      "targets": [
+        ["name=SpecialistID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SpecialistID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35f190da-71fa-42f3-b1f4-012505c71000",
+      "comment": "",
+      "command": "select",
+      "target": "name=SpecialistID",
+      "targets": [],
+      "value": "label=ดร.หมอจี"
+    }, {
+      "id": "08536265-d108-4f72-80fd-f2e150395634",
+      "comment": "",
+      "command": "click",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2f9a08e-9d53-4c13-bace-342fb3c0a82c",
+      "comment": "",
+      "command": "type",
+      "target": "name=Protection",
+      "targets": [
+        ["name=Protection", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Protection']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ใช้การแยกผู้ติดเชื้อและลดการสัมผัสกับหนู"
+    }, {
+      "id": "7342b0e2-72ec-4df3-adb9-8afce22ced33",
+      "comment": "",
+      "command": "click",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d89053-78af-44ff-ae11-5f1178ce5d13",
+      "comment": "",
+      "command": "type",
+      "target": "name=Age",
+      "targets": [
+        ["name=Age", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='Age']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "a3a2e476-bdaf-450b-82f2-0ec71aa90934",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-picker-dialog",
+      "targets": [
+        ["id=date-picker-dialog", "id"],
+        ["css=#date-picker-dialog", "css:finder"],
+        ["xpath=//input[@id='date-picker-dialog']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[6]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2650bf30-619e-44d5-b144-1191a89ed3b7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e1e713-2798-4f40-8868-10994b464a1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fd2852c-1c3f-49d2-9de9-c86154c7a665",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiInputAdornment-root .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiInputAdornment-root .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7b2f548-04da-4093-8621-26c0af72d509",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f566cdc-d2f7-44e3-85bc-870cca94350b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c2a71b-671e-49fb-8e99-8635f120cc44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bbdc2a1-3f6e-4029-85e0-72df4045ffa6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiPickersCalendarHeader-iconButton:nth-child(1) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8bc5c36-bd04-4cbf-b83b-2618b33c1c5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiTypography-root",
+      "targets": [
+        ["css=div:nth-child(1) > .MuiButtonBase-root > .MuiButton-label > .MuiTypography-root", "css:finder"],
+        ["xpath=//span/h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dfda2e1-d7a2-410d-8c5d-4f3933eee58d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTypography-root:nth-child(124)",
+      "targets": [
+        ["css=.MuiTypography-root:nth-child(124)", "css:finder"],
+        ["xpath=//div[124]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c82f4d1b-f1d2-481b-b0ea-8e9c7c01b486",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac0f3616-3cd6-4373-ad0d-561ce933858f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[8]/button/span", "xpath:idRelative"],
+        ["xpath=//div[8]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bb220f9-1518-4503-b685-8ef530a1a563",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be7fc96-b861-4ba9-acb3-3bae72534bcd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Date cannot be in the future"
+    }]
+  }],
+  "suites": [{
+    "id": "ecc8346f-c879-4b39-8b31-0521c46a2147",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

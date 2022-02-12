@@ -17,7 +17,7 @@ import Divider from "@material-ui/core/Divider";
 import Snackbar from "@material-ui/core/Snackbar";
 import Select from "@material-ui/core/Select";
 import MuiAlert, { AlertProps } from "@material-ui/lab/Alert";
-
+import TextField from '@material-ui/core/TextField';
 import { OfficersInterface } from "../models/IOfficer";
 
 import { PatientsInterface } from "../models/IPatient";
@@ -188,13 +188,13 @@ const [screening, setScreening] = useState<Partial<ScreeningInterface>>(
           .then((res) => {
             if (res.data) {
               setSuccess(true);
-	      serErrorMassage("");
+	      setErrorMassage("");
             } else {
               setError(true);
 	      setErrorMassage(res.error);
             }
           });
-    
+    }
 
   return (
     <Container className={classes.container} maxWidth="md">

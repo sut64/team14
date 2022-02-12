@@ -11,8 +11,8 @@ type Officer struct {
 	Email    string `gorm:"uniqueIndex"`
 	Password string
 
-	//Prevention   []Prevention   `gorm:"foreignKey:OfficerID"`
+	Prevention   []Prevention   `gorm:"foreignKey:OfficerID"`
 	Appointment  []Appointment  `gorm:"foreignKey:OfficerID"`
 	RoomDataList []RoomDataList `gorm:"foreignKey:OfficerID"`
-	Screening    []Screening `gorm:"foreignKey:OfficerID"`
+	Screening    []Screening    `gorm:"foreignKey:OfficerID"`
 }

@@ -39,6 +39,7 @@ func SetupDatabase() {
 		&CatchingType{},
 		&RiskGroupType{},
 		&Contagious{},
+		&Prevention{},
 	)
 
 	db = database
@@ -77,10 +78,10 @@ func SetupDatabase() {
 	})
 
 	db.Model(&Officer{}).Create(&Officer{
-                Name:     "Jirawan",
-                Email:    "jirawan@gmail.com",
-                Password: string(password),
-        })
+		Name:     "Jirawan",
+		Email:    "jirawan@gmail.com",
+		Password: string(password),
+	})
 
 	db.Model(&Officer{}).Create(&Officer{
 		Name:     "Nukanda",
@@ -344,10 +345,9 @@ func SetupDatabase() {
 	db.Model(&Germ{}).Create(&g5)
 
 	g6 := Germ{
-                Name: "ไข้หวัดใหญ่สายพันธุ์บี",
-        }
-        db.Model(&Germ{}).Create(&g6)
-
+		Name: "ไข้หวัดใหญ่สายพันธุ์บี",
+	}
+	db.Model(&Germ{}).Create(&g6)
 
 	// CatchingType Data
 	animal_to_human := CatchingType{
@@ -419,4 +419,25 @@ func SetupDatabase() {
 		Date:          time.Now().AddDate(-2, -10, -5),
 	}
 	db.Model(&Contagious{}).Create(&C3)
+
+	// Prevention Data
+	db.Model(&Prevention{}).Create(&Prevention{
+		Officer:    Mutant,
+		Contagious: C1,
+		Disease:    "เป็นชนิดของไข้เลือดออกจากไวรัสที่เกิดจากไวรัสลาสซา ไวรัสในวงศ์ Arenaviridae",
+		Specialist: g,
+		Protection: "ใช้การแยกผู้ติดเชื้อและลดการสัมผัสกับหนู",
+		Date:       time.Now(),
+		Age:        30,
+	})
+
+	db.Model(&Prevention{}).Create(&Prevention{
+		Officer:    b,
+		Contagious: C2,
+		Disease:    "มียุงลายเป็นพาหะนำโรค มักพบในประเทศเขตร้อนและระบาดในช่วงฤดูฝนของทุกปี",
+		Specialist: u,
+		Protection: "ป้องกันไม่ให้ยุงลายกัด โดยสวมใส่เสื้อผ้าที่ปกปิดมิดชิด ใช้สารไล่ยุงชนิดต่างๆ เช่น DEET รวมถึงป้องกันไม่ให้ยุงลายเข้ามาหลบซ่อนในบ้าน ทั้งนี้ ยุงลายมักกัดในเวลากลางวันมากกว่ากลางคืน",
+		Date:       time.Now(),
+		Age:        32,
+	})
 }

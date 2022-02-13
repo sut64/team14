@@ -13,7 +13,7 @@ func TestPAllpass(t *testing.T) {
 
 	prevention := Prevention{
 		Disease:    "กก",
-		Protection: "กข",
+		Protection: "กขคกขค",
 		Age:        10,
 		Date:       time.Now(),
 	}
@@ -30,7 +30,7 @@ func TestDiseaseMustNotBlank(t *testing.T) {
 
 	prevention := Prevention{
 		Disease:    "",
-		Protection: "กข",
+		Protection: "กขคกขค",
 		Age:        10,
 		Date:       time.Now(),
 	}
@@ -70,7 +70,7 @@ func TestAgeMustPositive(t *testing.T) {
 
 	prevention := Prevention{
 		Disease:    "กก",
-		Protection: "กข",
+		Protection: "กขคกขค",
 		Age:        -10,
 		Date:       time.Now(),
 	}
@@ -93,7 +93,7 @@ func TestPreventionDateNotBeFuture(t *testing.T) {
 
 	prevention := Prevention{
 		Disease:    "กก",
-		Protection: "กข",
+		Protection: "กขคกขค",
 		Age:        10,
 		Date:       time.Now().Add(time.Hour * 24), // ผิด เป็นอนาคต
 	}

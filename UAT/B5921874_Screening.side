@@ -1,0 +1,841 @@
+{
+  "id": "4a9a5dc8-4608-4312-b180-59a046575728",
+  "version": "2.0",
+  "name": "B5921874_Screening",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "8a2becaa-dcfe-4156-8259-4283881e05b9",
+    "name": "B5921874 - test pass all",
+    "commands": [{
+      "id": "06f60a95-7469-4a8a-bac6-be101f99a632",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60d672ea-e83f-426f-8927-a4ff61fff516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d2b7bcd-25e3-48ac-a010-b0db5064b6a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca894d29-a2cd-4570-a4d0-a86a37438c5f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "812445e5-6dd5-4da6-8ffe-f95fdd6bd597",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4289a642-1e4a-4478-b3ae-117ecf91bdb5",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2de63948-fd27-43f0-9832-11608f3e5c14",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=aaaaa"
+    }, {
+      "id": "dce300a1-8cbc-4915-918d-6925442d83a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=SymptomID",
+      "targets": [
+        ["name=SymptomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SymptomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd0acc9f-fe77-47ae-ae15-17bb3c769f8c",
+      "comment": "",
+      "command": "select",
+      "target": "name=SymptomID",
+      "targets": [],
+      "value": "label=head ache"
+    }, {
+      "id": "76f78b97-927a-4306-b19a-40dcb18ad25b",
+      "comment": "",
+      "command": "click",
+      "target": "name=RoomID",
+      "targets": [
+        ["name=RoomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RoomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67eebc64-d71f-419e-98f6-367f607e515a",
+      "comment": "",
+      "command": "select",
+      "target": "name=RoomID",
+      "targets": [],
+      "value": "label=b201"
+    }, {
+      "id": "469cf302-dd57-47a3-895e-e15929ed8734",
+      "comment": "",
+      "command": "click",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87fc710-2c9d-4a56-8e1f-ad4d3b31db28",
+      "comment": "",
+      "command": "type",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "170"
+    }, {
+      "id": "08c9f81f-a0da-45fa-b72a-30e90f1be445",
+      "comment": "",
+      "command": "click",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4277a79-f31c-46ca-989f-75af6df1f0b5",
+      "comment": "",
+      "command": "type",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "cancer"
+    }, {
+      "id": "544d9814-4b6f-4ba1-91c4-0b5502c78310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c60ff72-d454-49e8-a697-20556d0d8dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e71adaa-009d-4928-b4f1-e8e847ac058c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลสำเร็จ"
+    }]
+  }, {
+    "id": "4aaa52c4-d2b0-4174-8d5d-7cefc9982b85",
+    "name": "B5921874 - ตรวจสอบโรคประจำตัว CongenitalDisease ต้องไม่เป็นค่าว่าง",
+    "commands": [{
+      "id": "f7ecc55f-9baf-4466-ae39-f504330e7110",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7d93fe1-e208-4f10-abc6-6e6d5781f38d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c139d89f-e221-4821-a5cf-3ae231294394",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(7) path",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(7) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df7b725-c3bb-4184-9465-c572281a7efb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cdc5717-a44d-4230-b50f-87a1d4619d93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e90e4b1c-94ee-4f43-89cc-afe30c53461f",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc66d72-dea5-4f8d-a2f3-33547e4e12dc",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=bbbbb"
+    }, {
+      "id": "42ccd98b-e71e-4b5f-8593-0534c2c077eb",
+      "comment": "",
+      "command": "click",
+      "target": "name=RoomID",
+      "targets": [
+        ["name=RoomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RoomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c69035a8-2bc9-4166-a0d3-2099961d3d7e",
+      "comment": "",
+      "command": "select",
+      "target": "name=RoomID",
+      "targets": [],
+      "value": "label=b202"
+    }, {
+      "id": "b013e7d8-555c-4c72-a38c-ab1696effcc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=SymptomID",
+      "targets": [
+        ["name=SymptomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SymptomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+[O    }, {
+      "id": "3475aa9e-8f28-4b28-bf51-1b8f04488ca1",
+      "comment": "",
+      "command": "select",
+      "target": "name=SymptomID",
+      "targets": [],
+      "value": "label=cough"
+    }, {
+      "id": "0edde735-1cbf-4841-9183-eaea104e8d51",
+      "comment": "",
+      "command": "click",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3ff62fc-8280-4091-9e21-122e4db2daf3",
+      "comment": "",
+      "command": "type",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "170"
+    }, {
+      "id": "6acc01e3-bd79-48c2-b715-3111276fc255",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a531dc7-d8b8-49b3-a1da-ce10c9a32a50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiAlert-root",
+      "targets": [
+        ["css=.MuiAlert-root", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "840d4e73-c7b8-49eb-b904-231d2478eaea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: CongenitalDisease can not be blank"
+    }]
+  }, {
+    "id": "9555b681-e3af-4dcd-85b8-82c2c91193c0",
+    "name": "B5921874 - ตรวจสอบความดัน BloodPressure ต้องไม่เป็นค่าว่าง",
+    "commands": [{
+      "id": "991fbcaa-b1c8-4e6a-bb7b-5e4ef2415469",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea513e47-d992-4bc6-9cdb-50d8cec3688d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62f993f2-3cbc-4e12-9990-c727fb6b758e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7bb3b57-ec41-49bd-930f-22187224c09a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3729a79-cf4f-4ad5-8bc4-849566c83917",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65be1909-de19-4684-aeaf-fcb5734fdd3a",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=aaaaa"
+    }, {
+      "id": "d3bd3c2a-a209-4fda-ab45-1d4250e4e830",
+      "comment": "",
+      "command": "click",
+      "target": "name=SymptomID",
+      "targets": [
+        ["name=SymptomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SymptomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e56d077f-7b95-4d59-a602-1daf343e76a4",
+      "comment": "",
+      "command": "select",
+      "target": "name=SymptomID",
+      "targets": [],
+      "value": "label=head ache"
+    }, {
+      "id": "de530a93-34d4-4f4e-85af-bfd99a5d82ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=RoomID",
+      "targets": [
+        ["name=RoomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RoomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cab6b74a-a656-4fe6-b8cd-6f4d9bfab759",
+      "comment": "",
+      "command": "select",
+      "target": "name=RoomID",
+      "targets": [],
+      "value": "label=b201"
+    }, {
+      "id": "c23c7311-6726-4dae-ad37-b466bd0f01e1",
+      "comment": "",
+      "command": "click",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b70c3d2-97c0-459d-9dc3-c05bc823858a",
+      "comment": "",
+      "command": "type",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "cancer"
+    }, {
+      "id": "52508c1f-c537-4a10-bc1d-39b33a82a73c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cd2dcc5-9cca-44be-a98f-a203ba971d52",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: BloodPressure must more then 0"
+    }]
+  }, {
+    "id": "8f919d25-a914-4766-91fc-458a3aad18b9",
+    "name": "B5921874 - ตรวจสอบเวลา Time ต้องเป็นปัจจุบัน",
+    "commands": [{
+      "id": "e927972c-6874-4f9a-ae70-f530017fffa2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0c4d419-9e9e-482b-8650-57b49dc0c516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea1371c7-266b-4913-8154-3a1d3882c131",
+      "comment": "",
+      "command": "click",
+      "target": "css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.makeStyles-a-12:nth-child(7) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "077274a7-c75d-4e06-a999-27e235bec559",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd377696-6ef4-4ccb-b3d7-56a8a05ce7d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-contained > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'จัดการผู้ป่วย')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c02d4d50-d78e-4709-bd42-328aef7d7b1f",
+      "comment": "",
+      "command": "click",
+      "target": "name=PatientID",
+      "targets": [
+        ["name=PatientID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='PatientID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "946825e5-7210-4fe6-847d-d6ed03eeb538",
+      "comment": "",
+      "command": "select",
+      "target": "name=PatientID",
+      "targets": [],
+      "value": "label=aaaaa"
+    }, {
+      "id": "036db8fa-e712-41a6-8944-9429e9a556a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=SymptomID",
+      "targets": [
+        ["name=SymptomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='SymptomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02bbca16-f2eb-460f-84dc-1adac26ebedb",
+      "comment": "",
+      "command": "select",
+      "target": "name=SymptomID",
+      "targets": [],
+      "value": "label=cough"
+    }, {
+      "id": "be6c03ec-a9cd-40a7-8183-aeac6f2b2099",
+      "comment": "",
+      "command": "click",
+      "target": "name=RoomID",
+      "targets": [
+        ["name=RoomID", "name"],
+        ["css=.Mui-focused > .MuiSelect-root", "css:finder"],
+        ["xpath=//select[@name='RoomID']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[3]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65a55793-56eb-4936-ba54-3d0ef9c1918b",
+      "comment": "",
+      "command": "select",
+      "target": "name=RoomID",
+      "targets": [],
+      "value": "label=b202"
+    }, {
+      "id": "d24ec652-40ae-4879-8fdd-dd46756f53b4",
+      "comment": "",
+      "command": "click",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "318e4e79-a9bd-4460-9dc9-205ccd4722b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=BloodPressure",
+      "targets": [
+        ["name=BloodPressure", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='BloodPressure']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "170"
+    }, {
+      "id": "4c8ba4e7-d9de-45d5-bd92-69f95eead7ac",
+      "comment": "",
+      "command": "click",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da15700b-5c51-4c7f-bf97-1d44e1f1052c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
+      "targets": [
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2d70a5-5120-4c39-8429-555480f2a126",
+      "comment": "",
+      "command": "type",
+      "target": "name=CongenitalDisease",
+      "targets": [
+        ["name=CongenitalDisease", "name"],
+        ["css=.Mui-focused > .MuiInputBase-input", "css:finder"],
+        ["xpath=//input[@name='CongenitalDisease']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[5]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "cancer"
+    }, {
+      "id": "5b4e57c8-4f4e-4fe5-810d-c7e5a071d5b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
+      "targets": [
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebac333d-1023-456c-bbf7-74a7142a7908",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiInputAdornment-root path:nth-child(1)",
+      "targets": [
+        ["css=.MuiInputAdornment-root path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c308824a-5ba8-4dc5-8578-0d53dd0fec6f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "412f1722-f490-4e05-8a2a-fcaf526e9dc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c233aae5-f20a-4dd5-9e8c-f6531375934c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(3) .MuiSvgIcon-root", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53b993e-ae75-4f00-bbfe-222bf29dd5e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[3]/div[4]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42132d45-314e-42c9-83fe-2659428c93b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root",
+      "targets": [
+        ["css=.MuiPickersCalendar-week:nth-child(3) > div:nth-child(4) .MuiTypography-root", "css:finder"],
+        ["xpath=//div[3]/div[4]/button/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ba47da5-2485-4155-b02a-1fe31c785e78",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "154b89c2-ecde-4f00-87d6-89c375632256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-textPrimary:nth-child(2) > .MuiButton-label", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9948c497-ff82-46ac-802b-cad5e1c22d7f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6adbd4b-ca59-4bb2-8f71-dfcd4e2012b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07c8f366-b78d-4c1e-b0e5-689a30c6f61c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.MuiButton-containedPrimary > .MuiButton-label",
+      "targets": [
+        ["css=.MuiButton-containedPrimary > .MuiButton-label", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div[2]/div[2]/div[7]/button/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'บันทึก')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f550d4ad-7b0f-448c-8bd5-4db2ec99552b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.MuiAlert-message",
+      "targets": [
+        ["css=.MuiAlert-message", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div[2]/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]", "xpath:position"]
+      ],
+      "value": "บันทึกข้อมูลไม่สำเร็จ: Screening Date must be in Present"
+    }]
+  }],
+  "suites": [{
+    "id": "40352312-803e-44ca-a693-b4698edf7347",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8a2becaa-dcfe-4156-8259-4283881e05b9"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

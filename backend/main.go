@@ -1,10 +1,10 @@
 package main
 
 import (
-	github.comgin-gonicgin
-	github.comsut64team14controller
-	github.comsut64team14entity
-	github.comsut64team14middlewares
+	"github.com/gin-gonic/gin"
+	"github.com/sut64team14/controller"
+	"github.com/sut64team14/entity"
+	"github.com/sut64team14/middlewares"
 )
 
 func main() {
@@ -16,129 +16,129 @@ func main() {
 	{
 		protected = api.Use(middlewares.Authorizes())
 		{
-			Officer Routes
+			//Officer Routes
 			protected.GET(officers, controller.ListOfficers)
 			protected.GET(officerid, controller.GetOfficer)
 
 			protected.PATCH(officers, controller.UpdateOfficer)
 			protected.DELETE(officersid, controller.DeleteOfficer)
 
-			 Patient Routes
+			//Patient Routes
 			protected.GET(patients, controller.ListPatients)
 			protected.GET(patientid, controller.GetPatient)
 			protected.POST(patients, controller.CreatePatient)
 			protected.PATCH(patients, controller.UpdatePatient)
 			protected.DELETE(patientsid, controller.DeletePatient)
 
-			 Specialist Routes
+			//Specialist Routes
 			protected.GET(specialists, controller.ListSpecialists)
 			protected.GET(specialistid, controller.GetSpecialist)
 			protected.POST(specialists, controller.CreateSpecialist)
 			protected.PATCH(specialists, controller.UpdateSpecialist)
 			protected.DELETE(specialistsid, controller.DeleteSpecialist)
 
-			 RoomDetail Routes
+			//RoomDetail Routes
 			protected.GET(room_details, controller.ListRoomDetails)
 			protected.GET(room_detailid, controller.GetRoomDetails)
 			protected.POST(room_details, controller.CreateRoomDetail)
 			protected.PATCH(room_details, controller.UpdateRoomDetail)
 			protected.DELETE(room_detailsid, controller.DeleteRoomDetail)
 
-			 RoomDataList Routes
+			//RoomDataList Routes
 			protected.GET(room_data_lists, controller.ListRoomDataList)
 			protected.GET(room_data_listid, controller.GetRoomDataList)
 			protected.POST(room_data_lists, controller.CreateRoomDataList)
 			protected.PATCH(room_data_lists, controller.UpdateRoomDataList)
 			protected.DELETE(room_data_listsid, controller.DeleteRoomDataList)
 
-			 MedicineandVaccine Routes
+			//MedicineandVaccine Routes
 			protected.GET(medicineand_vaccines, controller.ListMedicineandVaccines)
 			protected.GET(medicineandvaccineid, controller.GetMedicineandVaccine)
 			protected.POST(medicineand_vaccines, controller.CreateMedicineandVaccine)
 			protected.PATCH(medicineand_vaccines, controller.UpdateMedicineandVaccine)
 			protected.DELETE(medicineand_vaccinesid, controller.DeleteMedicineandVaccine)
 
-			 DosageForm Routes
+			//DosageForm Routes
 			protected.GET(dosage_forms, controller.ListDosageForms)
 			protected.GET(dosageformid, controller.GetDosageForm)
 			protected.POST(dosage_forms, controller.CreateDosageForm)
 			protected.PATCH(dosage_forms, controller.UpdateDosageForm)
 			protected.DELETE(dosage_formsid, controller.DeleteDosageForm)
 
-			 Age Routes
+			//Age Routes
 			protected.GET(ages, controller.ListAges)
 			protected.GET(ageid, controller.GetAge)
 			protected.POST(ages, controller.CreateAge)
 			protected.PATCH(ages, controller.UpdateAge)
 			protected.DELETE(agesid, controller.DeleteAge)
 
-			 Category Routes
+			//Category Routes
 			protected.GET(categories, controller.ListCategories)
 			protected.GET(categoryid, controller.GetCategory)
 			protected.POST(categories, controller.CreateCategory)
 			protected.PATCH(categories, controller.UpdateCategory)
 			protected.DELETE(categoriesid, controller.DeleteCategory)
 
-			 Appointment Routes
+			//Appointment Routes
 			protected.GET(appointments, controller.ListAppointment)
 			protected.GET(appointmentsid, controller.GetAppointment)
 			protected.POST(appointments, controller.CreateAppoint)
 			protected.PATCH(appointments, controller.UpdateAppointment)
 			protected.DELETE(appointmentsid, controller.DeleteAppointment)
 
-			 Germ Routes
+			//Germ Routes
 			protected.GET(germ, controller.ListGerm)
 			protected.GET(germid, controller.GetGerm)
 			protected.POST(germ, controller.CreateGerm)
 			protected.PATCH(germ, controller.UpdateGerm)
 			protected.DELETE(germid, controller.DeleteGerm)
 
-			 CatchingType Routes
+			//CatchingType Routes
 			protected.GET(catching_type, controller.ListCatchingType)
 			protected.GET(catching_typeid, controller.GetCatchingType)
 			protected.POST(catching_type, controller.CreateCatchingType)
 			protected.PATCH(catching_type, controller.UpdateCatchingType)
 			protected.DELETE(catching_typeid, controller.DeleteCatchingType)
 
-			 RiskGroupType Routes
+			//RiskGroupType Routes
 			protected.GET(risk_group_type, controller.ListRiskGroupType)
 			protected.GET(risk_group_typeid, controller.GetRiskGroupType)
 			protected.POST(risk_group_type, controller.CreateRiskGroupType)
 			protected.PATCH(risk_group_type, controller.UpdateRiskGroupType)
 			protected.DELETE(risk_group_typeid, controller.DeleteRiskGroupType)
 
-			 Contagious Routes
+			//Contagious Routes
 			protected.GET(contagious, controller.ListContagious)
 			protected.GET(contagiousid, controller.GetContagious)
 			protected.POST(contagious, controller.CreateContagious)
 			protected.PATCH(contagious, controller.UpdateContagious)
 			protected.DELETE(contagiousid, controller.DeleteContagious)
 
-			PatientRoom
+			//PatientRoom
 			protected.GET(rooms,controller.ListRooms)
 			protected.GET(roomsid,controller.GetRoom)
 			protected.POST(rooms,controller.CreateRoom)
 			protected.PATCH(rooms, controller.UpdateRoom)
 			protected.DELETE(roomsid, controller.DeleteRoom)
-			Symptom
+			//Symptom
 			protected.GET(symptoms,controller.ListSymptoms)
 			protected.GET(symptomid,controller.GetSymptom)
 			protected.POST(symptoms,controller.CreateSymptom)
 			protected.PATCH(symptoms, controller.UpdateSymptom)
 			protected.DELETE(symptomsid, controller.DeleteSymptom)
-			Screening
+			//Screening
 			protected.GET(screenings,controller.ListScreening)
 			protected.GET(screeningid,controller.GetScreening)
 			protected.POST(screenings,controller.CreateScreening)
 			protected.PATCH(screenings, controller.UpdateScreening)
 			protected.DELETE(screeningsid, controller.DeleteScreening)
 
-			Prevention
-			protected.GET("/preventions", controller.ListPrevention)
-			protected.GET("/prevention/:id", controller.GetPrevention)
-			protected.POST("/preventions", controller.CreatePrevention)
-			protected.PATCH("/preventions", controller.UpdatePrevention)
-			protected.DELETE("/preventions/:id", controller.DeletePrevention)
+			//Prevention Routes
+			protected.GET(preventions, controller.ListPrevention)
+			protected.GET(preventionid, controller.GetPrevention)
+			protected.POST(preventions, controller.CreatePrevention)
+			protected.PATCH(preventions, controller.UpdatePrevention)
+			protected.DELETE(preventionsid, controller.DeletePrevention)
 		}
 	}
 	 User Routes

@@ -303,7 +303,7 @@
         ["xpath=//div[2]/div/div/select", "xpath:position"]
       ],
       "value": ""
-[O    }, {
+    }, {
       "id": "3475aa9e-8f28-4b28-bf51-1b8f04488ca1",
       "comment": "",
       "command": "select",

@@ -18,15 +18,18 @@ func TestContagiousPass(t *testing.T) {
 		Incubation: 7,
 		Date:       time.Now(),
 	}
-
+	
+	// ตรวจสอบด้วย govalidator
 	ok, err := govalidator.ValidateStruct(contagious)
 
+	// ok ต้องเป็นค่า true 
 	g.Expect(ok).To(gomega.BeTrue())
 
+	// err ต้องเป็นค่า nil 
 	g.Expect(err).To(gomega.BeNil())
 }
 
-//ทดสอบชื่อเป็นค่าว่าง ต้องเจอ error
+// ทดสอบชื่อเป็นค่าว่าง ต้องเจอ error
 func TestContagiousNameNotBlank(t *testing.T) {
 	g := gomega.NewGomegaWithT(t)
 
@@ -37,12 +40,16 @@ func TestContagiousNameNotBlank(t *testing.T) {
 		Date:       time.Now(),
 	}
 
+        // ตรวจสอบด้วย govalidator
 	ok, err := govalidator.ValidateStruct(contagious)
 
+	// ok ต้องไม่เป็นค่า true แปลว่าต้องจับ error ได้
 	g.Expect(ok).ToNot(gomega.BeTrue())
 
+	// err ต้องไม่เป็นค่า nil แปลว่าต้องจับ error ได้
 	g.Expect(err).ToNot(gomega.BeNil())
 
+	// err.Error ต้องมี error message แสดงออกมา
 	g.Expect(err.Error()).To(gomega.Equal("Name cannot be blank"))
 
 }

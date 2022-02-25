@@ -23,7 +23,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Button from "@material-ui/core/Button";
 
-
+import FindInPageIcon from '@material-ui/icons/FindInPage';
 import HomeIcon from "@material-ui/icons/Home";
 //import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 import FaceIcon from '@material-ui/icons/Face';
@@ -141,7 +141,7 @@ export default function MiniDrawer() {
     { name: "Specialist", icon: <FaceIcon />, path: "/specialists" },*/
     { name: "Room Data List Order ", icon: <HouseIcon />, path: "/room_data_lists" },
     { name: "MedicineandVaccine", icon: <UnarchiveIcon />, path: "/medicineand_vaccines" },
-    { name: "Appointment List ", icon: <UnarchiveIcon />, path: "/appointment" },
+    { name: "Appointment List ", icon: <FindInPageIcon />, path: "/appointment" },
     { name: "Contagious", icon: <EmojiNatureIcon />, path: "/contagious" },
     { name: "Patient", icon: <AccountCircleIcon />, path: "/screenings" },
     { name: "Prevention", icon: <UnarchiveIcon />, path: "/prevention" },

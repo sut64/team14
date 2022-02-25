@@ -10,7 +10,7 @@ type Patient struct {
 	Age           uint
 	Gender        string
 	BloodPressure uint
-
+	Appointment  []Appointment  `gorm:"foreignKey:PatientID"`
 	Screening    []Screening    `gorm:"foreignKey:PatientID"`
 	RoomDataList []RoomDataList `gorm:"foreignKey:PatientID"`
 }
